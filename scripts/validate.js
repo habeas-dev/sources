@@ -36,7 +36,10 @@ export function registrableDomain(urlOrHost) {
 // Every host an adapter reads from / replays credentials to.
 export function collectHosts(adapter) {
   const hosts = new Set();
-  if (adapter.api && adapter.api.host) hosts.add(hostOf(adapter.api.host));
+  const api = adapter.api || {};
+  if (api.host) hosts.add(hostOf(api.host));
+  if (api.pdf && api.pdf.host) hosts.add(hostOf(api.pdf.host));       // the session is replayed here too
+  if (api.detail && api.detail.host) hosts.add(hostOf(api.detail.host));
   for (const m of adapter.match || []) hosts.add(hostOf(m));
   for (const h of adapter.captureHosts || []) hosts.add(hostOf(h));
   return [...hosts].filter(Boolean);
@@ -72,7 +75,7 @@ function hasNoCode(v, seen = new Set()) {
 
 const ID_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const SCHEMA_RE = /^[a-z_]+@\d+$/;
-const PAGING = new Set(['offsets', 'page', 'cursor', 'none']);
+const PAGING = new Set(['offsets', 'offset', 'page', 'cursor', 'none']);
 
 export function validateAdapter(adapter) {
   const errors = [];
@@ -99,7 +102,7 @@ export function validateAdapter(adapter) {
     req(typeof fields.internalId === 'string', 'fields.internalId required');
     req(typeof fields.date === 'string', 'fields.date required');
     const auth = adapter.auth || {};
-    req(Array.isArray(auth.replayHeaders) && auth.replayHeaders.length > 0, 'auth.replayHeaders[] required');
+    req(Array.isArray(auth.replayHeaders), 'auth.replayHeaders must be an array (may be empty for cookie auth)');
 
     const h = checkHosts(adapter);
     req(h.ok, h.offenders.length

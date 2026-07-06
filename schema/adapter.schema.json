@@ -45,12 +45,12 @@
       "required": ["replayHeaders"],
       "additionalProperties": false,
       "properties": {
+        "mode": { "enum": ["bearer", "cookie"], "description": "bearer = replay the captured JWT; cookie = rely on the browser's cookies (credentials:include). Endpoints may mix (e.g. cookie list + bearer PDF)." },
         "tokenMatch": { "type": "string", "description": "Substring the captured Authorization must contain to be a real user token (e.g. eyJ)." },
         "replayHeaders": {
           "type": "array",
           "items": { "type": "string" },
-          "minItems": 1,
-          "description": "Captured request headers to replay when calling the API."
+          "description": "Captured request headers to replay when calling the API (may be empty for cookie auth)."
         },
         "captureHosts": {
           "type": "array",
@@ -71,7 +71,7 @@
           "additionalProperties": false,
           "properties": {
             "path": { "type": "string", "pattern": "^/" },
-            "paging": { "enum": ["offsets", "page", "cursor", "none"], "description": "Pagination strategy. Defaults to offsets if offsetsPath present, else cursor if nextPath present, else none." },
+            "paging": { "enum": ["offsets", "offset", "page", "cursor", "none"], "description": "Pagination strategy. Defaults to offsets if offsetsPath present, else cursor if nextPath present, else none." },
             "itemsPath": { "type": "string", "description": "Dotted path to the array of items in the response (e.g. data.items)." },
             "offsetsPath": { "type": "string", "description": "[offsets] Dotted path to the offsets object merged into the next query." },
             "initialOffsets": { "type": "object", "description": "[offsets] Seed offsets object." },
@@ -79,6 +79,9 @@
             "cursorParam": { "type": "string", "description": "[cursor] Query param name for the cursor (default: cursor)." },
             "pageParam": { "type": "string", "description": "[page] Query param name for the page number (default: page)." },
             "pageStart": { "type": "number", "description": "[page] First page number (default: 1)." },
+            "offsetParam": { "type": "string", "description": "[offset] Query param name for the item offset (default: offset)." },
+            "offsetStart": { "type": "number", "description": "[offset] First offset (default: 0)." },
+            "offsetStep": { "type": "number", "description": "[offset] Offset increment per page (the page size)." },
             "range": {
               "type": "object",
               "additionalProperties": false,
@@ -90,15 +93,36 @@
             },
             "window": { "type": "string", "pattern": "^\\d+y$", "description": "Lookback window for the range, e.g. 3y." },
             "maxPages": { "type": "number", "description": "Safety cap on pages fetched (default 100)." },
-            "params": { "type": "object", "description": "Static query params. `count` also drives the page-paging stop condition." }
+            "params": { "type": "object", "description": "Static query params. `count` also drives the page-paging stop condition." },
+            "headers": { "type": "object", "description": "Static headers the SPA sends for the list (e.g. dkt-ecom-origin).", "additionalProperties": { "type": "string" } },
+            "referer": { "type": "string", "description": "Referer to send per request (templated with {page}/{from}/{offset}) — for endpoints that only honour the offset when the Referer reflects the page. Set via declarativeNetRequest." }
           }
         },
         "pdf": {
           "type": "object",
           "required": ["path"],
           "additionalProperties": false,
+          "description": "Per-document PDF. GET by default; some services generate it via POST with the invoice data as the body.",
           "properties": {
-            "path": { "type": "string", "description": "PDF path with {internalId} placeholder. Omit api.pdf entirely for metadata-only sources." }
+            "path": { "type": "string", "description": "PDF path with {internalId} placeholder." },
+            "method": { "enum": ["GET", "POST"] },
+            "host": { "type": "string", "description": "PDF host if different from api.host (still bound by the same-domain guard / crossDomainHosts)." },
+            "body": { "type": "string", "description": "[POST] Request body template; {internalId} is substituted." },
+            "contentType": { "type": "string", "description": "[POST] Content-Type of the body (default application/json)." },
+            "referer": { "type": "string", "description": "Referer header to send (templated with {internalId}) — for services that gate the PDF behind its detail page. Set via declarativeNetRequest." }
+          }
+        },
+        "detail": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Per-document JSON detail (e.g. a full order). Saved as <id>.json. Preferred over a POST-generated PDF. Use `from:'list'` when the list endpoint already returns each item's full data (no extra request).",
+          "properties": {
+            "from": { "enum": ["list"], "description": "'list' → the document IS the already-listed item's JSON (no path/request needed)." },
+            "path": { "type": "string", "description": "Detail path with {internalId} placeholder." },
+            "method": { "enum": ["GET", "POST"] },
+            "host": { "type": "string", "description": "Detail host if different from api.host (same-domain guard applies)." },
+            "headers": { "type": "object", "description": "Static headers the SPA sends for this endpoint (e.g. dkt-ecom-origin).", "additionalProperties": { "type": "string" } },
+            "referer": { "type": "string", "description": "Referer header to send (templated with {internalId}) — for endpoints that validate it. Set via declarativeNetRequest." }
           }
         }
       }
