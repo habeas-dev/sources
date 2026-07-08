@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T04:52:44.554Z",
+  "generated": "2026-07-08T09:30:53.633Z",
   "sources": [
     {
       "id": "bipdrive-es",
@@ -23,7 +23,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-08T04:52:44.554Z"
+      "updated": "2026-07-08T09:30:53.633Z"
     },
     {
       "id": "carrefour-es",
@@ -49,7 +49,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-08T04:52:44.554Z"
+      "updated": "2026-07-08T09:30:53.633Z"
     },
     {
       "id": "decathlon-es",
@@ -73,7 +73,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-08T04:52:44.554Z"
+      "updated": "2026-07-08T09:30:53.633Z"
     },
     {
       "id": "dia-es",
@@ -98,7 +98,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-08T04:52:44.554Z"
+      "updated": "2026-07-08T09:30:53.633Z"
     },
     {
       "id": "hover-com",
@@ -123,7 +123,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-08T04:52:44.554Z"
+      "updated": "2026-07-08T09:30:53.633Z"
     },
     {
       "id": "leroymerlin-es",
@@ -147,7 +147,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-08T04:52:44.554Z"
+      "updated": "2026-07-08T09:30:53.633Z"
     },
     {
       "id": "wizink-extractos-excel-es",
@@ -171,7 +171,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-extractos-excel-es.json",
-      "updated": "2026-07-08T04:52:44.554Z"
+      "updated": "2026-07-08T09:30:53.633Z"
     },
     {
       "id": "wizink-extractos-pdf-es",
@@ -195,7 +195,29 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-extractos-pdf-es.json",
-      "updated": "2026-07-08T04:52:44.554Z"
+      "updated": "2026-07-08T09:30:53.633Z"
+    },
+    {
+      "id": "wizink-movimientos-es",
+      "name": "WiZink España — movimientos de tarjeta",
+      "service": "wizink",
+      "categories": [
+        "card"
+      ],
+      "trust": "first-party",
+      "domain": "wizink.es",
+      "country": "ES",
+      "formats": [],
+      "crossDomain": [],
+      "version": "2026-07-08",
+      "changelog": [
+        {
+          "version": "2026-07-08",
+          "changes": "Incluye pagos (movItemR, receiptAndPaymentsTable) con importe negativo, además de los gastos; sin duplicados; todos los campos; manifest propio; cap 90 días."
+        }
+      ],
+      "url": "https://habeas-dev.github.io/sources/wizink-movimientos-es.json",
+      "updated": "2026-07-08T09:30:53.633Z"
     }
   ]
 }
