@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T12:42:27.619Z",
+  "generated": "2026-07-08T13:39:23.160Z",
   "sources": [
     {
       "id": "bipdrive-es",
@@ -24,7 +24,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -51,7 +51,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "carrefour-es",
@@ -78,7 +78,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "decathlon-es",
@@ -103,7 +103,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "dia-es",
@@ -129,7 +129,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "hover-com",
@@ -155,7 +155,29 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
+    },
+    {
+      "id": "ikea-es",
+      "name": "IKEA España — compras y tiquets",
+      "service": "ikea",
+      "categories": [
+        "home"
+      ],
+      "trust": "first-party",
+      "domain": "ikea.com",
+      "country": "ES",
+      "formats": [
+        "pdf"
+      ],
+      "crossDomain": [
+        "cssom-prod.ingka.com"
+      ],
+      "version": "2026-07-08",
+      "minVersion": "0.1.36",
+      "changelog": [],
+      "url": "https://habeas-dev.github.io/sources/ikea-es.json",
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "leroymerlin-es",
@@ -180,7 +202,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "wizink-extractos-excel-es",
@@ -205,7 +227,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-extractos-excel-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "wizink-extractos-pdf-es",
@@ -230,7 +252,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-extractos-pdf-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     },
     {
       "id": "wizink-movimientos-es",
@@ -253,7 +275,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-movimientos-es.json",
-      "updated": "2026-07-08T12:42:27.619Z"
+      "updated": "2026-07-08T13:39:23.160Z"
     }
   ]
 }
