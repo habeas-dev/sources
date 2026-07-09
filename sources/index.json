@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T06:07:54.283Z",
+  "generated": "2026-07-09T15:19:38.371Z",
   "sources": [
     {
       "id": "amazon-es",
@@ -16,11 +16,11 @@
         "pdf"
       ],
       "crossDomain": [],
-      "version": "2026-07-09",
+      "version": "2026-07-10",
       "minVersion": "0.1.38",
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/amazon-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
       "id": "bipdrive-es",
@@ -45,7 +45,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -72,7 +72,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
       "id": "carrefour-es",
@@ -99,7 +99,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
       "id": "decathlon-es",
@@ -124,7 +124,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
       "id": "dia-es",
@@ -150,7 +150,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
       "id": "hover-com",
@@ -176,7 +176,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
       "id": "ikea-es",
@@ -198,7 +198,7 @@
       "minVersion": "0.1.36",
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
       "id": "leroymerlin-es",
@@ -223,80 +223,31 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "updated": "2026-07-09T15:19:38.371Z"
     },
     {
-      "id": "wizink-extractos-excel-es",
-      "name": "WiZink España — extractos (Excel)",
+      "id": "wizink-es",
+      "name": "WiZink España",
       "service": "wizink",
       "categories": [
+        "card",
         "banking"
-      ],
-      "trust": "first-party",
-      "domain": "wizink.es",
-      "country": "ES",
-      "formats": [
-        "xls"
-      ],
-      "crossDomain": [],
-      "version": "2026-07-08",
-      "minVersion": "0.1.23",
-      "changelog": [
-        {
-          "version": "2026-07-08",
-          "changes": "Extractos en Excel por tarjeta; selector de tarjeta; abre /login sin sesión; recupera cookies corruptas; cap de 90 días para evitar el SMS."
-        }
-      ],
-      "url": "https://habeas-dev.github.io/sources/wizink-extractos-excel-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
-    },
-    {
-      "id": "wizink-extractos-pdf-es",
-      "name": "WiZink España — extractos (PDF)",
-      "service": "wizink",
-      "categories": [
-        "banking"
-      ],
-      "trust": "first-party",
-      "domain": "wizink.es",
-      "country": "ES",
-      "formats": [
-        "pdf"
-      ],
-      "crossDomain": [],
-      "version": "2026-07-08",
-      "minVersion": "0.1.23",
-      "changelog": [
-        {
-          "version": "2026-07-08",
-          "changes": "Extractos en PDF por tarjeta (DownloadIC2File); mismas protecciones + cap de 90 días."
-        }
-      ],
-      "url": "https://habeas-dev.github.io/sources/wizink-extractos-pdf-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
-    },
-    {
-      "id": "wizink-movimientos-es",
-      "name": "WiZink España — movimientos de tarjeta",
-      "service": "wizink",
-      "categories": [
-        "card"
       ],
       "trust": "first-party",
       "domain": "wizink.es",
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-08",
-      "minVersion": "0.1.23",
+      "version": "2026-07-09",
+      "minVersion": "0.1.52",
       "changelog": [
         {
-          "version": "2026-07-08",
-          "changes": "Incluye pagos (movItemR, receiptAndPaymentsTable) con importe negativo, además de los gastos; sin duplicados; todos los campos; manifest propio; cap 90 días."
+          "version": "2026-07-09",
+          "changes": "Fuente unificada: reemplaza las tres fuentes WiZink (movimientos, extractos-PDF, extractos-Excel) por un único source con salidas seleccionables (stream × formato). El stream «Movimientos» captura las transacciones de tarjeta; el stream «Extractos» ofrece cada extracto en PDF o Excel compartiendo el mismo listado. Requiere la extensión 0.1.52+ (soporte de salidas)."
         }
       ],
-      "url": "https://habeas-dev.github.io/sources/wizink-movimientos-es.json",
-      "updated": "2026-07-09T06:07:54.283Z"
+      "url": "https://habeas-dev.github.io/sources/wizink-es.json",
+      "updated": "2026-07-09T15:19:38.371Z"
     }
   ]
 }
