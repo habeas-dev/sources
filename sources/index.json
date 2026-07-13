@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-10T19:48:35.089Z",
+  "generated": "2026-07-13T10:09:59.314Z",
   "sources": [
     {
       "id": "amazon-es",
@@ -20,7 +20,7 @@
       "minVersion": "0.1.38",
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/amazon-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "bipdrive-es",
@@ -45,7 +45,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -72,7 +72,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "carrefour-es",
@@ -99,7 +99,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "decathlon-es",
@@ -124,7 +124,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "dia-es",
@@ -150,7 +150,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "hover-com",
@@ -167,16 +167,20 @@
         "html"
       ],
       "crossDomain": [],
-      "version": "2026-07-08",
+      "version": "2026-07-13",
       "minVersion": null,
       "changelog": [
+        {
+          "version": "2026-07-13",
+          "changes": "Bill in USD (Hover charges USD; was defaulting to EUR)."
+        },
         {
           "version": "2026-07-08",
           "changes": "Facturas de dominios (JSON + recibo HTML)."
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "ikea-es",
@@ -198,7 +202,7 @@
       "minVersion": "0.1.36",
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "leroymerlin-es",
@@ -237,7 +241,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     },
     {
       "id": "wizink-es",
@@ -265,7 +269,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-07-10T19:48:35.089Z"
+      "updated": "2026-07-13T10:09:59.314Z"
     }
   ]
 }
