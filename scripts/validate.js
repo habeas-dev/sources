@@ -119,7 +119,7 @@ function checkExtraction(a, req, label) {
     req(list.synthetic && ['months', 'group', 'group-months'].includes(list.synthetic.each), p + 'api.list.synthetic.each must be months|group|group-months');
   } else {
     req(typeof list.path === 'string' && list.path.startsWith('/'), p + 'api.list.path required');
-    req(list.from === 'html' || (typeof list.itemsPath === 'string' && list.itemsPath.length > 0), p + 'api.list.itemsPath required (unless list.from is "html")');
+    req(list.from === 'html' || (typeof list.itemsPath === 'string' && list.itemsPath.length > 0) || (Array.isArray(list.itemsPath) && list.itemsPath.length > 0 && list.itemsPath.every((x) => typeof x === 'string' && x)), p + 'api.list.itemsPath required — a dotted path, or an array of candidate paths (unless list.from is "html")');
     req(!list.paging || PAGING.has(list.paging), p + 'api.list.paging must be offsets|offset|page|cursor|none|years');
   }
   const fields = a.fields || {};
@@ -172,6 +172,11 @@ export function validateAdapter(adapter) {
     else checkExtraction(adapter, req);
     const auth = adapter.auth || {};
     req(Array.isArray(auth.replayHeaders), 'auth.replayHeaders must be an array (may be empty for cookie auth)');
+    if (adapter.throttle != null) {
+      const th = adapter.throttle;
+      req(th && typeof th.minMs === 'number' && th.minMs >= 0 && (th.jitterMs == null || (typeof th.jitterMs === 'number' && th.jitterMs >= 0)),
+        'throttle must be { minMs: number≥0, jitterMs?: number≥0 }');
+    }
 
     const h = checkHosts(adapter);
     req(h.ok, h.offenders.length
