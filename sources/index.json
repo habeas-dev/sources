@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T08:27:47.359Z",
+  "generated": "2026-07-17T07:49:34.704Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "amazon-es",
@@ -48,7 +48,7 @@
       "gaps": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/amazon-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "bipdrive-es",
@@ -74,7 +74,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -102,7 +102,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "carrefour-es",
@@ -130,7 +130,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "decathlon-es",
@@ -156,7 +156,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "dia-es",
@@ -183,7 +183,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "hover-com",
@@ -214,7 +214,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "ikea-es",
@@ -237,7 +237,7 @@
       "gaps": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "ing-es",
@@ -251,17 +251,24 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-14",
-      "minVersion": "0.1.65.5",
-      "gaps": [],
+      "version": "2026-07-16",
+      "minVersion": "0.3.0.24",
+      "gaps": [
+        "tarjetas",
+        "inversión"
+      ],
       "changelog": [
+        {
+          "version": "2026-07-16",
+          "changes": "Map the movement's running balance to record.balanceAfter (promoted to a canonical field for the Cuéntamo contract). Requires extension >= 0.3.0.24."
+        },
         {
           "version": "2026-07-14",
           "changes": "Initial: movements (transactions), per-account monthly statements (PDF/Excel), and the integrated monthly statement (PDF). Grouped by account, 90-day window."
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "leroymerlin-es",
@@ -301,7 +308,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "openbank-es",
@@ -315,12 +322,16 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-15.1",
-      "minVersion": "0.1.67",
+      "version": "2026-07-16",
+      "minVersion": "0.3.0.24",
       "gaps": [
         "tarjetas"
       ],
       "changelog": [
+        {
+          "version": "2026-07-16",
+          "changes": "Map the movement's running balance (saldo.importe) to record.balanceAfter (promoted to a canonical field for the Cuéntamo contract). Requires extension >= 0.3.0.24."
+        },
         {
           "version": "2026-07-15.1",
           "changes": "Fix `movimientos`: the first (non-SCA) page returns a flat `movimientos` array, not `methodResult.movimientos` — itemsPath now accepts both shapes."
@@ -335,7 +346,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "revolut",
@@ -351,10 +362,14 @@
       "crossDomain": [
         "storage.googleapis.com"
       ],
-      "version": "2026-07-15.2",
-      "minVersion": "0.1.68",
+      "version": "2026-07-16",
+      "minVersion": "0.3.0.24",
       "gaps": [],
       "changelog": [
+        {
+          "version": "2026-07-16",
+          "changes": "Map the running balance (minor-unit scaled) to record.balanceAfter and the completed date to record.valueDate — promoted to canonical fields for the Cuéntamo contract. Requires extension >= 0.3.0.24."
+        },
         {
           "version": "2026-07-15.2",
           "changes": "Add account statements (PDF/CSV) per account × month: async-generated (poll account-statements until READY) then download the signed Google Storage URL (crossDomainHosts + consent). Statements bounded to the last ~12 months."
@@ -369,7 +384,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "traderepublic",
@@ -384,10 +399,18 @@
       "country": "global",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-15.3",
-      "minVersion": "0.2.0",
+      "version": "2026-07-17",
+      "minVersion": "0.3.0.24",
       "gaps": [],
       "changelog": [
+        {
+          "version": "2026-07-17",
+          "changes": "Parse the trade breakdown into structured fields: units (Shares), price (Share price) and commission (Fee) from the timelineDetailV2 'Transaction' table (English labels — the WS connect requests locale 'en'). 'Free' fees resolve to 0. Requires extension >= 0.3.0.24."
+        },
+        {
+          "version": "2026-07-16",
+          "changes": "Timeline stream now emits investment@2 (broker trade/cash): recordType inferred from the extracted ISIN, side/kind mapped from the timeline eventType, instrument{isin,name}, and the settlement account (cashAccountNumber). Trade quantity/price/fees remain in record.extra.detail (localized text) pending structured parsing. Requires extension >= 0.3.0.24."
+        },
         {
           "version": "2026-07-15.3",
           "changes": "Add monthly documents: the account statement PDF (accountstatement/statement?fromDate&toDate) and the monthly transactions CSV (async export job: POST request → poll status → download), per completed month."
@@ -406,7 +429,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     },
     {
       "id": "wizink-es",
@@ -435,7 +458,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-07-16T08:27:47.359Z"
+      "updated": "2026-07-17T07:49:34.704Z"
     }
   ]
 }
