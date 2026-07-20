@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T07:49:34.704Z",
+  "generated": "2026-07-20T11:27:57.465Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "amazon-es",
@@ -48,7 +48,7 @@
       "gaps": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/amazon-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "bipdrive-es",
@@ -74,7 +74,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -102,7 +102,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "carrefour-es",
@@ -130,7 +130,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "decathlon-es",
@@ -156,7 +156,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "dia-es",
@@ -183,7 +183,68 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
+    },
+    {
+      "id": "financiera-elcorteingles-es",
+      "name": "Financiera El Corte Inglés",
+      "service": "financiera-elcorteingles",
+      "categories": [
+        "card",
+        "loan"
+      ],
+      "trust": "community",
+      "domain": "financieraelcorteingles.es",
+      "country": "ES",
+      "formats": [],
+      "crossDomain": [],
+      "version": "2026-07-20.3",
+      "minVersion": "0.5.0",
+      "gaps": [],
+      "changelog": [
+        {
+          "version": "2026-07-20.3",
+          "changes": "First publish to the live registry. Requires extension >= 0.5.0 (the milestone that ships declarative capturePaths, the login-safe scoped token observer, and the {date:FORMAT} document token this source relies on). Verified end-to-end by the contributor."
+        },
+        {
+          "version": "2026-07-20.2",
+          "changes": "Fix the statement PDF datePurchase format: the generate-file endpoint wants DD/MM/YYYY (e.g. 01/09/2025), but on a store re-download the date falls back to the normalized ISO value (2025-09-01), which the server rejected with HTTP 400. Now formatted explicitly via {date:DD/MM/YYYY}. Requires extension >= 0.4.1.15."
+        },
+        {
+          "version": "2026-07-20.1",
+          "changes": "Declare auth.capturePaths = ['/dashboard/'] so the token is only captured from the authenticated dashboard area (where it first appears, after login) and the header observer never engages with the sign-in flow — this keeps the extension from interfering with the bank's Transmit Security login."
+        },
+        {
+          "version": "2026-07-20",
+          "changes": "Send the per-card eci-custom-encrypted-pan header on the aplazamientos (financing-purchases) and extractos (shopping-summaries) LIST requests too — the SPA sends it on every card-scoped call (as movements already does), so the server needs it to return those lists per card, not just for movements + the statement PDF."
+        },
+        {
+          "version": "2026-07-17.4",
+          "changes": "Revert tokenFromStorage: FECI's API bearer is a WSO2 OAuth JWT held in memory (obtained via /api/accessTokenTransmit), NOT in localStorage — aphishi-lws_at.t is a session id, so injecting it gave WSO2 900901 'Invalid Credentials'. Back to capturing the bearer from the SPA's own requests (auth.replayHeaders)."
+        },
+        {
+          "version": "2026-07-17.3",
+          "changes": "(reverted) read the bearer from localStorage via auth.tokenFromStorage — wrong field for FECI (the token isn't in localStorage)."
+        },
+        {
+          "version": "2026-07-17.2",
+          "changes": "Fix extractos statement PDF download (the real cause): the generate-file POST also needs the per-card eci-custom-encrypted-pan header (same as movements), which the server requires to return the file. Sent via api.pdf.headers {group.pan}. Requires extension >= 0.4.1.2."
+        },
+        {
+          "version": "2026-07-17.1",
+          "changes": "extractos generate-file POST sends the {} JSON body + application/json content-type the SPA sends. datePurchase correct (the raw item date, DD/MM/YYYY)."
+        },
+        {
+          "version": "2026-07-17",
+          "changes": "Fix empty aplazamientos + extractos lists: send the query params the SPA sends. aplazamientos/financing-purchases now sends page_number=0&page_size=100 (the endpoint is paged); extractos/shopping-summaries now sends date_bill (the current billing date the SPA stamps), via the new {monthEnd:DD/MM/YYYY} computed-date token. Requires extension >= 0.4.1.1."
+        },
+        {
+          "version": "2026-07-16",
+          "changes": "Initial (authored from a redacted handoff recording, verified live by the contributor). Multi-card (grouped by contract): card movements (transactions), aplazamientos/financing purchases, and monthly statement PDFs (generated per month, base64). Cookie session + replayed bearer + per-card eci-custom-encrypted-pan header."
+        }
+      ],
+      "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "hover-com",
@@ -214,7 +275,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "ikea-es",
@@ -237,7 +298,7 @@
       "gaps": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "ing-es",
@@ -268,7 +329,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "leroymerlin-es",
@@ -308,7 +369,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "openbank-es",
@@ -346,7 +407,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "revolut",
@@ -384,7 +445,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "traderepublic",
@@ -429,7 +490,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     },
     {
       "id": "wizink-es",
@@ -458,7 +519,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-07-17T07:49:34.704Z"
+      "updated": "2026-07-20T11:27:57.465Z"
     }
   ]
 }

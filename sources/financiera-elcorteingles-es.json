@@ -1,0 +1,188 @@
+{
+  "id": "financiera-elcorteingles-es",
+  "name": "Financiera El Corte Inglés",
+  "service": "financiera-elcorteingles",
+  "trust": "community",
+  "domain": "financieraelcorteingles.es",
+  "country": "ES",
+  "categories": [
+    "card",
+    "loan"
+  ],
+  "version": "2026-07-20.3",
+  "minVersion": "0.5.0",
+  "keepRaw": true,
+  "contributors": [
+    "David Marín"
+  ],
+  "match": [
+    "https://www.financieraelcorteingles.es/*"
+  ],
+  "openUrl": "https://www.financieraelcorteingles.es/dashboard/",
+  "auth": {
+    "mode": "cookie",
+    "replayHeaders": [
+      "authorization"
+    ],
+    "capturePaths": [
+      "/dashboard/"
+    ]
+  },
+  "api": {
+    "host": "https://www.financieraelcorteingles.es",
+    "groups": {
+      "path": "/dashboard/user",
+      "itemsPath": "userEciCardList",
+      "fields": {
+        "id": "contract_number",
+        "label": "cardLabel",
+        "mask": "masked_pan",
+        "pan": "encryptedPan"
+      }
+    }
+  },
+  "streams": [
+    {
+      "id": "movimientos",
+      "schema": "transaction@1",
+      "categories": [
+        "card"
+      ],
+      "api": {
+        "list": {
+          "path": "/dashboard/api/payments/ms-evolve-cards-transactions/v3/cards/transactions-global/movements-close",
+          "params": {
+            "operationType": "A",
+            "accountNumber": "{group.id}"
+          },
+          "paramSets": [
+            {
+              "monthFilter": "N",
+              "paginationType": "N"
+            },
+            {
+              "monthFilter": "A",
+              "paginationType": "A"
+            }
+          ],
+          "itemsPath": "movements",
+          "headers": {
+            "eci-custom-encrypted-pan": "{group.pan}"
+          }
+        }
+      },
+      "fields": {
+        "internalId": "invoiceNumber",
+        "date": "operationDate",
+        "amount": "amount",
+        "description": "company",
+        "counterparty": "center",
+        "type": "type"
+      }
+    },
+    {
+      "id": "aplazamientos",
+      "schema": "transaction@1",
+      "categories": [
+        "loan"
+      ],
+      "api": {
+        "list": {
+          "path": "/dashboard/api/payments/ms-evolve-customers-contracts/v2/card-contracts/{group.id}/financing-purchases",
+          "params": {
+            "page_number": "0",
+            "page_size": "100"
+          },
+          "headers": {
+            "eci-custom-encrypted-pan": "{group.pan}"
+          },
+          "itemsPath": "financing_data",
+          "paging": "none"
+        }
+      },
+      "fields": {
+        "internalId": "identifier",
+        "date": "start_date",
+        "type": "financing_type"
+      }
+    },
+    {
+      "id": "extractos",
+      "schema": "invoice@1",
+      "categories": [
+        "card"
+      ],
+      "api": {
+        "list": {
+          "path": "/dashboard/api/payments/ms-evolve-documents/v1/contracts/{group.id}/shopping-summaries",
+          "params": {
+            "date_bill": "{monthEnd:DD/MM/YYYY}"
+          },
+          "headers": {
+            "eci-custom-encrypted-pan": "{group.pan}"
+          },
+          "itemsPath": "previous_months_shopping_summaries",
+          "paging": "none"
+        },
+        "pdf": {
+          "path": "/dashboard/api/payments/ms-evolve-documents/v1/contracts/{group.id}/shopping-summaries/generate-file?datePurchase={date:DD/MM/YYYY}",
+          "method": "POST",
+          "body": "{}",
+          "contentType": "application/json",
+          "headers": {
+            "eci-custom-encrypted-pan": "{group.pan}"
+          },
+          "base64Field": "file",
+          "ext": "pdf"
+        }
+      },
+      "fields": {
+        "internalId": "date",
+        "date": "date",
+        "number": "description"
+      }
+    }
+  ],
+  "changelog": [
+    {
+      "version": "2026-07-20.3",
+      "changes": "First publish to the live registry. Requires extension >= 0.5.0 (the milestone that ships declarative capturePaths, the login-safe scoped token observer, and the {date:FORMAT} document token this source relies on). Verified end-to-end by the contributor."
+    },
+    {
+      "version": "2026-07-20.2",
+      "changes": "Fix the statement PDF datePurchase format: the generate-file endpoint wants DD/MM/YYYY (e.g. 01/09/2025), but on a store re-download the date falls back to the normalized ISO value (2025-09-01), which the server rejected with HTTP 400. Now formatted explicitly via {date:DD/MM/YYYY}. Requires extension >= 0.4.1.15."
+    },
+    {
+      "version": "2026-07-20.1",
+      "changes": "Declare auth.capturePaths = ['/dashboard/'] so the token is only captured from the authenticated dashboard area (where it first appears, after login) and the header observer never engages with the sign-in flow — this keeps the extension from interfering with the bank's Transmit Security login."
+    },
+    {
+      "version": "2026-07-20",
+      "changes": "Send the per-card eci-custom-encrypted-pan header on the aplazamientos (financing-purchases) and extractos (shopping-summaries) LIST requests too — the SPA sends it on every card-scoped call (as movements already does), so the server needs it to return those lists per card, not just for movements + the statement PDF."
+    },
+    {
+      "version": "2026-07-17.4",
+      "changes": "Revert tokenFromStorage: FECI's API bearer is a WSO2 OAuth JWT held in memory (obtained via /api/accessTokenTransmit), NOT in localStorage — aphishi-lws_at.t is a session id, so injecting it gave WSO2 900901 'Invalid Credentials'. Back to capturing the bearer from the SPA's own requests (auth.replayHeaders)."
+    },
+    {
+      "version": "2026-07-17.3",
+      "changes": "(reverted) read the bearer from localStorage via auth.tokenFromStorage — wrong field for FECI (the token isn't in localStorage)."
+    },
+    {
+      "version": "2026-07-17.2",
+      "changes": "Fix extractos statement PDF download (the real cause): the generate-file POST also needs the per-card eci-custom-encrypted-pan header (same as movements), which the server requires to return the file. Sent via api.pdf.headers {group.pan}. Requires extension >= 0.4.1.2."
+    },
+    {
+      "version": "2026-07-17.1",
+      "changes": "extractos generate-file POST sends the {} JSON body + application/json content-type the SPA sends. datePurchase correct (the raw item date, DD/MM/YYYY)."
+    },
+    {
+      "version": "2026-07-17",
+      "changes": "Fix empty aplazamientos + extractos lists: send the query params the SPA sends. aplazamientos/financing-purchases now sends page_number=0&page_size=100 (the endpoint is paged); extractos/shopping-summaries now sends date_bill (the current billing date the SPA stamps), via the new {monthEnd:DD/MM/YYYY} computed-date token. Requires extension >= 0.4.1.1."
+    },
+    {
+      "version": "2026-07-16",
+      "changes": "Initial (authored from a redacted handoff recording, verified live by the contributor). Multi-card (grouped by contract): card movements (transactions), aplazamientos/financing purchases, and monthly statement PDFs (generated per month, base64). Cookie session + replayed bearer + per-card eci-custom-encrypted-pan header."
+    }
+  ]
+}
