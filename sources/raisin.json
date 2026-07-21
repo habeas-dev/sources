@@ -1,0 +1,414 @@
+{
+  "id": "raisin",
+  "name": "Raisin",
+  "service": "raisin",
+  "trust": "community",
+  "domain": "raisin.com",
+  "categories": [
+    "banking",
+    "investment"
+  ],
+  "version": "2026-07-20.18",
+  "minVersion": "0.5.0.32",
+  "keepRaw": true,
+  "contributors": [
+    "David Marín Carreño"
+  ],
+  "match": [
+    "https://www.raisin.com/*"
+  ],
+  "crossDomainHosts": [
+    "api2.weltsparen.de"
+  ],
+  "auth": {
+    "mode": "bearer",
+    "replayHeaders": [
+      "authorization"
+    ],
+    "capturePaths": [
+      "/tams/",
+      "/dbff/",
+      "/dds/",
+      "/cas/"
+    ],
+    "context": [
+      {
+        "name": "customer_id",
+        "from": "url",
+        "match": "customer_id=(BAC_[0-9_]+)"
+      }
+    ],
+    "tokenFromStorage": {
+      "key": "auth_token",
+      "field": "access_token",
+      "scheme": "Bearer"
+    },
+    "cookies": false
+  },
+  "api": {
+    "host": "https://api2.weltsparen.de"
+  },
+  "streams": [
+    {
+      "id": "movimientos",
+      "name": "Movimientos (cuenta Raisin)",
+      "schema": "transaction@1",
+      "categories": [
+        "banking"
+      ],
+      "keepRaw": true,
+      "api": {
+        "groups": {
+          "path": "/tams/v1/accounts",
+          "itemsPath": "$",
+          "params": {
+            "filter": "customerId eq {ctx.customer_id} & type eq TA_INTERNAL"
+          },
+          "fields": {
+            "id": "id",
+            "name": "accountNumber",
+            "iban": "iban",
+            "currency": "currencyCode",
+            "type": "type"
+          },
+          "mask": [
+            "iban"
+          ],
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          }
+        },
+        "list": {
+          "path": "/tams/v1/accounts/{group.id}/transactions",
+          "paging": "offset",
+          "offsetParam": "offset",
+          "offsetStep": 10,
+          "itemsPath": "$",
+          "params": {
+            "limit": 10,
+            "date_from": "{daysAgo:90}"
+          },
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          }
+        }
+      },
+      "fields": {
+        "internalId": "id",
+        "date": "bookingDate",
+        "amount": "amount",
+        "currency": "currencyCode",
+        "counterparty": "counterpartyName",
+        "description": "referenceText"
+      }
+    },
+    {
+      "id": "depositos",
+      "name": "Depósitos a plazo",
+      "schema": "investment@2",
+      "categories": [
+        "investment"
+      ],
+      "keepRaw": true,
+      "api": {
+        "list": {
+          "paging": "none",
+          "itemsPath": "entries",
+          "params": {
+            "customer_id": "{ctx.customer_id}",
+            "locale": "{locale}",
+            "sort_by": "availability",
+            "order_by": "asc"
+          },
+          "keep": {
+            "field": "accounting.deposit_id",
+            "prefix": "FDA_"
+          },
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          },
+          "paths": [
+            "/dbff/v1/public/deposits/dashboard/active",
+            "/dbff/v1/public/deposits/dashboard/inactive"
+          ]
+        }
+      },
+      "fields": {
+        "internalId": "accounting.deposit_id",
+        "date": "deposit.opening_date",
+        "amount": "accounting.balance.amount.denomination",
+        "currency": "accounting.balance.amount.currency",
+        "description": "{i18n:deposit} {product.deposit_taking_bank.name} {accounting.effective_interest_rate:num}% {accounting.term:duration} - {deposit.opening_date:date}",
+        "counterparty": "{product.deposit_taking_bank.name}",
+        "group": "{i18n:deposit} {product.deposit_taking_bank.name} {accounting.effective_interest_rate:num}% {accounting.term:duration} - {deposit.opening_date:date}"
+      }
+    },
+    {
+      "id": "ahorro",
+      "name": "Movimientos (cuentas de ahorro)",
+      "schema": "transaction@1",
+      "categories": [
+        "banking"
+      ],
+      "keepRaw": true,
+      "api": {
+        "groups": {
+          "itemsPath": "entries",
+          "params": {
+            "customer_id": "{ctx.customer_id}",
+            "locale": "{locale}",
+            "sort_by": "availability",
+            "order_by": "asc"
+          },
+          "keep": {
+            "field": "accounting.deposit_id",
+            "prefix": "OMA_"
+          },
+          "fields": {
+            "id": "accounting.deposit_id",
+            "currency": "accounting.balance.amount.currency",
+            "name": "{i18n:account} {product.deposit_taking_bank.name}"
+          },
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          },
+          "paths": [
+            "/dbff/v1/public/deposits/dashboard/active",
+            "/dbff/v1/public/deposits/dashboard/inactive"
+          ]
+        },
+        "list": {
+          "path": "/dbff/v1/public/deposits/{group.id}",
+          "paging": "none",
+          "itemsPath": "accounting.transactions",
+          "params": {
+            "customer_id": "{ctx.customer_id}",
+            "locale": "{locale:lower}"
+          },
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          }
+        }
+      },
+      "fields": {
+        "internalId": "transaction_id",
+        "date": "value_date",
+        "amount": "amount.denomination",
+        "currency": "amount.currency",
+        "description": "type"
+      }
+    },
+    {
+      "id": "documentos",
+      "name": "Documentos de depósitos",
+      "schema": "invoice@1",
+      "categories": [
+        "banking"
+      ],
+      "keepRaw": true,
+      "api": {
+        "groups": {
+          "itemsPath": "entries",
+          "params": {
+            "customer_id": "{ctx.customer_id}",
+            "locale": "{locale}",
+            "sort_by": "availability",
+            "order_by": "asc"
+          },
+          "keep": {
+            "field": "accounting.deposit_id",
+            "prefix": "FDA_"
+          },
+          "fields": {
+            "id": "accounting.deposit_id",
+            "name": "{i18n:deposit} {product.deposit_taking_bank.name} {accounting.effective_interest_rate:num}% {accounting.term:duration} - {deposit.opening_date:date}"
+          },
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          },
+          "paths": [
+            "/dbff/v1/public/deposits/dashboard/active",
+            "/dbff/v1/public/deposits/dashboard/inactive"
+          ]
+        },
+        "list": {
+          "path": "/dds/api/v2/public/documents",
+          "paging": "none",
+          "itemsPath": "documents",
+          "params": {
+            "customer_id": "{ctx.customer_id}",
+            "deposit_id": "{group.id}"
+          },
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          }
+        },
+        "pdf": {
+          "path": "/dds/api/v2/public/documents/{internalId}",
+          "params": {
+            "preview": "true"
+          }
+        }
+      },
+      "fields": {
+        "internalId": "id",
+        "date": "created",
+        "description": "title",
+        "type": "document_type"
+      }
+    },
+    {
+      "id": "documentos-ahorro",
+      "name": "Documentos de cuentas de ahorro",
+      "schema": "invoice@1",
+      "categories": [
+        "banking"
+      ],
+      "keepRaw": true,
+      "api": {
+        "groups": {
+          "itemsPath": "entries",
+          "params": {
+            "customer_id": "{ctx.customer_id}",
+            "locale": "{locale}",
+            "sort_by": "availability",
+            "order_by": "asc"
+          },
+          "keep": {
+            "field": "accounting.deposit_id",
+            "prefix": "OMA_"
+          },
+          "fields": {
+            "id": "accounting.deposit_id",
+            "name": "{i18n:account} {product.deposit_taking_bank.name}"
+          },
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          },
+          "paths": [
+            "/dbff/v1/public/deposits/dashboard/active",
+            "/dbff/v1/public/deposits/dashboard/inactive"
+          ]
+        },
+        "list": {
+          "path": "/dds/api/v2/public/documents",
+          "paging": "none",
+          "itemsPath": "documents",
+          "params": {
+            "customer_id": "{ctx.customer_id}",
+            "deposit_id": "{group.id}"
+          },
+          "headers": {
+            "accept": "application/json, text/plain, */*"
+          }
+        },
+        "pdf": {
+          "path": "/dds/api/v2/public/documents/{internalId}",
+          "params": {
+            "preview": "true"
+          }
+        }
+      },
+      "fields": {
+        "internalId": "id",
+        "date": "created",
+        "description": "title",
+        "type": "document_type"
+      }
+    }
+  ],
+  "changelog": [
+    {
+      "version": "2026-07-20.18",
+      "changes": "Multi-language labels: the product-type word (Deposit/Account) is translated per browser locale via a source i18n dictionary (en/es/de/fr/nl — every Raisin market; en fallback), since the API only returns it as an enum. Dropped the TAE abbreviation (varies by country; % is universal). Requires 0.5.0.32 ({i18n:key} token)."
+    },
+    {
+      "version": "2026-07-20.17",
+      "changes": "Multi-market: renamed raisin-es -> raisin (the API api2.weltsparen.de is shared across all Raisin countries); the response-language `locale` param now follows the browser locale via {locale}/{locale:lower} instead of a hardcoded es-ES. Requires 0.5.0.30. (Account-label WORDS Depósito/Cuenta/TAE remain Spanish for now.)"
+    },
+    {
+      "version": "2026-07-20.16",
+      "changes": "A deposit account now shows the SAME name everywhere: its own record, its documents, and the account picker all use the full \"Depósito <bank> <rate>% TAE <term> - <opening>\" label (the record previously showed a shorter \"Depósito <bank>\"). The bank moved to the store/counterparty column."
+    },
+    {
+      "version": "2026-07-20.15",
+      "changes": "Split documents by product: FDA_ deposits keep the \"Depósito … % TAE … plazo\" label; OMA_ savings accounts now show \"Cuenta <bank>\" (no rate/term — variable). Deposit records carry their own account label. Requires 0.5.0.29 (ungrouped-stream account label)."
+    },
+    {
+      "version": "2026-07-20.14",
+      "changes": "Requires 0.5.0.28: group-field templates now resolve (the account picker AND the Account column show the readable name instead of a raw id)."
+    },
+    {
+      "version": "2026-07-20.13",
+      "changes": "Deposit labels now use browser-locale formatting: rate with the locale decimal comma and term as words (\"Depósito Banca Progetto 2,45% TAE 6 meses - 2024-03-22\"). Requires runtime 0.5.0.27 ({field:num|pct|duration|date} format directives)."
+    },
+    {
+      "version": "2026-07-20.12",
+      "changes": "Readable account/deposit names: savings show \"Cuenta <bank>\", deposits \"Depósito <bank> <rate>% TAE - <opening date>\" using the real bank name (deposit_taking_bank.name). Deposit date is now the opening date (deposit.opening_date). (Term wording and decimal comma still pending a formatting helper.)"
+    },
+    {
+      "version": "2026-07-20.11",
+      "changes": "Deposits, savings and documents now enumerate BOTH dashboard/active AND dashboard/inactive (api paths[]), so inactive/cancelled deposits and ALL their documents are captured (documents come from /dds per deposit). Requires runtime 0.5.0.26 (paths[] support)."
+    },
+    {
+      "version": "2026-07-20.10",
+      "changes": "Savings/deposit accounts now carry a readable name (the deposit-taking bank) + type, so the account list and per-account labels show a bank name instead of a raw id. Requires 0.5.0.25 (account picker enumerates every grouped stream: current account + savings + deposits)."
+    },
+    {
+      "version": "2026-07-20.9",
+      "changes": "Requires runtime 0.5.0.24: list params now resolve {ctx.*} (depositos/ahorro/documentos send the real customer_id, was literal → dbff/dbs 403) and pdf.params apply to the document fetch (dds ?preview=true). All 4 outputs verified offline against the capture."
+    },
+    {
+      "version": "2026-07-20.8",
+      "changes": "Account list uses the real OData filter customerId eq {ctx.customer_id} & type eq TA_INTERNAL (was the invalid filter=all → 401). The customerId is templated from captured context, never hardcoded. Requires group-param ctx templating (minVersion 0.5.0.19)."
+    },
+    {
+      "version": "2026-07-20.7",
+      "changes": "Send the browser-style Accept header (application/json, text/plain, */*) on every list/groups request. Instrumentation proved the ONLY difference between the SPA’s working request and our 401 was the Accept value (bare application/json); the API gateway rejects it. Same token, same everything else."
+    },
+    {
+      "version": "2026-07-20.6",
+      "changes": "auth.cookies:false — send the bearer WITHOUT cookies. Instrumentation proved the token is valid (not expired), so the 401 Authorization-required on a valid token points to a weltsparen.de session cookie interfering with the bearer on the cross-domain call (like Openbank 413). Bearer-only request."
+    },
+    {
+      "version": "2026-07-20.5",
+      "changes": "Re-enable tokenFromStorage {key:auth_token, field:access_token}: token-correlation in a fresh capture PROVED the /tams bearer IS localStorage.auth_token.access_token (same [jwt#1] tag on all 19 API calls). Reading it fresh avoids the ~5min Keycloak expiry."
+    },
+    {
+      "version": "2026-07-20.4",
+      "changes": "Revert tokenFromStorage: localStorage.auth_token.access_token is the Keycloak access token, NOT the weltsparen API bearer (a distinct api_ticket token, likely in-memory) — sending it gave 401 Authorization required. Back to the captured API bearer (capturePaths); token freshness/exchange still under investigation."
+    },
+    {
+      "version": "2026-07-20.3",
+      "changes": "Point tokenFromStorage at the explicit field access_token (localStorage.auth_token.access_token) — unambiguous and works without the auto-detect. minVersion 0.5.0.8."
+    },
+    {
+      "version": "2026-07-20.2",
+      "changes": "Read the bearer FRESH from localStorage.auth_token on every request (auth.tokenFromStorage, access-token auto-detected) — Raisin uses a short-lived Keycloak JWT (~5 min) that expired between capture and listing (401 Jwt is expired). This always sends a valid, current user token."
+    },
+    {
+      "version": "2026-07-20.1",
+      "changes": "Scope token capture to the user-data endpoints (auth.capturePaths /tams/ /dbff/ /dds/ /cas/) so the replayed bearer is the logged-in user's token, not a client/anonymous token the public catalog (/dcms) may carry — which caused a 401 UNAUTHORIZED on /tams/v1/accounts even with an authorization sent."
+    },
+    {
+      "version": "2026-07-20",
+      "changes": "Initial: Raisin (WeltSparen). Cross-domain login raisin.com -> API api2.weltsparen.de (Keycloak bearer), customer_id captured as context, 90-day window (SCA-free). Four outputs: movimientos (Raisin transaction account, tams), depósitos (fixed-term deposits FDA_, investment@2 with keepRaw), ahorro (flexible savings-account movements OMA_, from the deposit detail's embedded transactions), documentos (terms/condiciones via dds). OMA (flexible cuenta corriente) vs FDA (fixed deposit) split by the product-id prefix (auth.keep prefix on accounting.deposit_id)."
+    }
+  ],
+  "i18n": {
+    "deposit": {
+      "en": "Deposit",
+      "es": "Depósito",
+      "de": "Festgeld",
+      "fr": "Dépôt",
+      "nl": "Deposito"
+    },
+    "account": {
+      "en": "Account",
+      "es": "Cuenta",
+      "de": "Konto",
+      "fr": "Compte",
+      "nl": "Rekening"
+    }
+  }
+}
