@@ -28,10 +28,12 @@ const entries = readdirSync(dir)
     return {
       id: a.id, name: a.name, service: a.service,
       categories: a.categories || [], trust: a.trust || 'community',
+      beta: !!a.beta,   // experimental: drafted but not yet verified against a real in-session capture
       domain: a.domain, country: a.country || null, formats: formatsOf(a), crossDomain: a.crossDomainHosts || [],
       version: (a.version || now.slice(0, 10)),
       minVersion: a.minVersion || null,
       gaps: a.gaps || [],   // products this source doesn't cover yet — a user who has one can "Complete" it
+      contributors: a.contributors || [], // handles credited for the recording this source was built from
       changelog: a.changelog || [],
       url: `${BASE}/${f}`, updated: now,
     };

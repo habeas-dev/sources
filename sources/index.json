@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T15:48:55.965Z",
+  "generated": "2026-07-23T07:27:46.193Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -10,6 +10,7 @@
         "retail"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "aliexpress.com",
       "country": "global",
       "formats": [
@@ -19,6 +20,7 @@
       "version": "2026-07-16",
       "minVersion": "0.3.0",
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-16",
@@ -26,7 +28,31 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "service": "amazon",
+      "categories": [
+        "marketplace"
+      ],
+      "trust": "first-party",
+      "beta": true,
+      "domain": "amazon.com",
+      "country": "global",
+      "formats": [
+        "json",
+        "pdf"
+      ],
+      "crossDomain": [],
+      "version": "2026-07-23",
+      "minVersion": "0.7.0.3",
+      "gaps": [],
+      "contributors": [],
+      "changelog": [],
+      "url": "https://habeas-dev.github.io/sources/amazon.json",
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "amazon-es",
@@ -36,6 +62,7 @@
         "marketplace"
       ],
       "trust": "first-party",
+      "beta": false,
       "domain": "amazon.es",
       "country": "ES",
       "formats": [
@@ -46,9 +73,31 @@
       "version": "2026-07-10",
       "minVersion": "0.1.38",
       "gaps": [],
+      "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/amazon-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
+    },
+    {
+      "id": "americanexpress",
+      "name": "American Express",
+      "service": "amex",
+      "categories": [
+        "banking"
+      ],
+      "trust": "community",
+      "beta": true,
+      "domain": "americanexpress.com",
+      "country": "global",
+      "formats": [],
+      "crossDomain": [],
+      "version": "2021-08-13",
+      "minVersion": "0.5.0.24",
+      "gaps": [],
+      "contributors": [],
+      "changelog": [],
+      "url": "https://habeas-dev.github.io/sources/americanexpress.json",
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "bipdrive-es",
@@ -58,6 +107,7 @@
         "tolls"
       ],
       "trust": "first-party",
+      "beta": false,
       "domain": "bipdrive.com",
       "country": "ES",
       "formats": [
@@ -67,6 +117,7 @@
       "version": "2026-07-08",
       "minVersion": null,
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-08",
@@ -74,7 +125,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -84,6 +135,7 @@
         "card"
       ],
       "trust": "first-party",
+      "beta": false,
       "domain": "caixabankconsumer.com",
       "country": "ES",
       "formats": [
@@ -95,6 +147,7 @@
       "version": "2026-07-08",
       "minVersion": "0.1.35",
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-08",
@@ -102,7 +155,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "carrefour-es",
@@ -114,6 +167,7 @@
         "retail"
       ],
       "trust": "first-party",
+      "beta": false,
       "domain": "carrefour.es",
       "country": "ES",
       "formats": [
@@ -123,6 +177,7 @@
       "version": "2026-07-08",
       "minVersion": null,
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-08",
@@ -130,7 +185,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "decathlon-es",
@@ -140,6 +195,7 @@
         "sports"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "decathlon.es",
       "country": "ES",
       "formats": [
@@ -149,6 +205,7 @@
       "version": "2026-07-08",
       "minVersion": null,
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-08",
@@ -156,7 +213,28 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
+    },
+    {
+      "id": "degiro",
+      "name": "DeGiro",
+      "service": "degiro",
+      "categories": [
+        "investment"
+      ],
+      "trust": "community",
+      "beta": true,
+      "domain": "degiro.nl",
+      "country": "EU",
+      "formats": [],
+      "crossDomain": [],
+      "version": "2024-11-04",
+      "minVersion": "0.5.0.24",
+      "gaps": [],
+      "contributors": [],
+      "changelog": [],
+      "url": "https://habeas-dev.github.io/sources/degiro.json",
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "dia-es",
@@ -166,6 +244,7 @@
         "grocery"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "dia.es",
       "country": "ES",
       "formats": [
@@ -176,6 +255,7 @@
       "version": "2026-07-08",
       "minVersion": null,
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-08",
@@ -183,7 +263,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "financiera-elcorteingles-es",
@@ -194,6 +274,7 @@
         "loan"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "financieraelcorteingles.es",
       "country": "ES",
       "formats": [],
@@ -201,6 +282,9 @@
       "version": "2026-07-20.3",
       "minVersion": "0.5.0",
       "gaps": [],
+      "contributors": [
+        "David Marín"
+      ],
       "changelog": [
         {
           "version": "2026-07-20.3",
@@ -244,7 +328,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "hover-com",
@@ -254,6 +338,7 @@
         "domains"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "hover.com",
       "country": "global",
       "formats": [
@@ -264,6 +349,7 @@
       "version": "2026-07-13",
       "minVersion": null,
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-13",
@@ -275,7 +361,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "ikea-es",
@@ -285,6 +371,7 @@
         "home"
       ],
       "trust": "first-party",
+      "beta": false,
       "domain": "ikea.com",
       "country": "ES",
       "formats": [
@@ -296,9 +383,10 @@
       "version": "2026-07-08",
       "minVersion": "0.1.36",
       "gaps": [],
+      "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "ing-es",
@@ -308,6 +396,7 @@
         "banking"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "ingdirect.es",
       "country": "ES",
       "formats": [],
@@ -318,6 +407,7 @@
         "tarjetas",
         "inversión"
       ],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-16",
@@ -329,7 +419,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "leroymerlin-es",
@@ -339,6 +429,7 @@
         "diy"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "leroymerlin.es",
       "country": "ES",
       "formats": [],
@@ -346,6 +437,7 @@
       "version": "2026-07-10.3",
       "minVersion": "0.1.53.13",
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-10.3",
@@ -369,7 +461,30 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
+    },
+    {
+      "id": "n26",
+      "name": "N26",
+      "service": "n26",
+      "categories": [
+        "banking"
+      ],
+      "trust": "community",
+      "beta": true,
+      "domain": "n26.com",
+      "country": "EU",
+      "formats": [],
+      "crossDomain": [
+        "api.tech26.de"
+      ],
+      "version": "2024-08-10",
+      "minVersion": "0.5.0.24",
+      "gaps": [],
+      "contributors": [],
+      "changelog": [],
+      "url": "https://habeas-dev.github.io/sources/n26.json",
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "openbank-es",
@@ -379,6 +494,7 @@
         "banking"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "openbank.es",
       "country": "ES",
       "formats": [],
@@ -388,6 +504,7 @@
       "gaps": [
         "tarjetas"
       ],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-16",
@@ -407,7 +524,28 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
+    },
+    {
+      "id": "paypal",
+      "name": "PayPal",
+      "service": "paypal",
+      "categories": [
+        "banking"
+      ],
+      "trust": "community",
+      "beta": true,
+      "domain": "paypal.com",
+      "country": "global",
+      "formats": [],
+      "crossDomain": [],
+      "version": "2019-11-09",
+      "minVersion": "0.5.0.24",
+      "gaps": [],
+      "contributors": [],
+      "changelog": [],
+      "url": "https://habeas-dev.github.io/sources/paypal.json",
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "raisin",
@@ -418,6 +556,7 @@
         "investment"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "raisin.com",
       "country": "global",
       "formats": [],
@@ -427,6 +566,9 @@
       "version": "2026-07-21",
       "minVersion": "0.5.0.32",
       "gaps": [],
+      "contributors": [
+        "David Marín Carreño"
+      ],
       "changelog": [
         {
           "version": "2026-07-21",
@@ -510,7 +652,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "revolut",
@@ -520,6 +662,7 @@
         "banking"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "revolut.com",
       "country": "global",
       "formats": [],
@@ -529,6 +672,7 @@
       "version": "2026-07-16",
       "minVersion": "0.3.0.24",
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-16",
@@ -548,7 +692,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "traderepublic",
@@ -559,6 +703,7 @@
         "investment"
       ],
       "trust": "community",
+      "beta": false,
       "domain": "traderepublic.com",
       "country": "global",
       "formats": [],
@@ -566,6 +711,7 @@
       "version": "2026-07-17",
       "minVersion": "0.3.0.24",
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-17",
@@ -593,7 +739,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     },
     {
       "id": "wizink-es",
@@ -604,6 +750,7 @@
         "banking"
       ],
       "trust": "first-party",
+      "beta": false,
       "domain": "wizink.es",
       "country": "ES",
       "formats": [],
@@ -611,6 +758,7 @@
       "version": "2026-07-10",
       "minVersion": "0.1.52",
       "gaps": [],
+      "contributors": [],
       "changelog": [
         {
           "version": "2026-07-10",
@@ -622,7 +770,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-07-21T15:48:55.965Z"
+      "updated": "2026-07-23T07:27:46.193Z"
     }
   ]
 }
