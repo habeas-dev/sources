@@ -5,7 +5,7 @@
   "trust": "community",
   "domain": "ingdirect.es",
   "country": "ES",
-  "version": "2026-07-23",
+  "version": "2026-07-23.1",
   "minVersion": "0.7.0.21",
   "categories": [
     "banking"
@@ -71,12 +71,6 @@
           "params": {
             "limit": 100,
             "filterEru": "false"
-          },
-          "keep": {
-            "field": "status.description",
-            "exclude": [
-              "Pendiente de liquidar"
-            ]
           }
         }
       },
@@ -188,8 +182,8 @@
   ],
   "changelog": [
     {
-      "version": "2026-07-23",
-      "changes": "Do not persist PENDING card charges (status \"Pendiente de liquidar\"): ING re-lists a still-pending charge with a fresh id/sequence/balance every sync, so they never dedup and pile up as duplicates — only the stable SETTLED record is kept; account movements have no status and are untouched. Needs extension >= 0.7.0.21 (keep.exclude)."
+      "version": "2026-07-23.1",
+      "changes": "Reverted the pending-charge exclusion: a current-month credit-card purchase is CONFIRMED but stays \"Pendiente de liquidar\" until the monthly settlement, so excluding pending hid real movements. Pending charges are listed again; the pending-duplicate issue (ING churns the id of a still-pending charge between syncs) needs a targeted natural-key dedup instead."
     },
     {
       "version": "2026-07-16",

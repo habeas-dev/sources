@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T11:12:26.711Z",
+  "generated": "2026-07-23T11:34:25.476Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -28,7 +28,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "amazon",
@@ -52,7 +52,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "americanexpress",
@@ -73,7 +73,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/americanexpress.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "bipdrive-es",
@@ -101,7 +101,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -131,7 +131,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "carrefour-es",
@@ -161,7 +161,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "decathlon-es",
@@ -189,7 +189,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "degiro",
@@ -210,7 +210,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/degiro.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "dia-es",
@@ -239,7 +239,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "financiera-elcorteingles-es",
@@ -304,7 +304,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "hover-com",
@@ -337,7 +337,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "ikea-es",
@@ -362,7 +362,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "ing-es",
@@ -377,7 +377,7 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-23",
+      "version": "2026-07-23.1",
       "minVersion": "0.7.0.21",
       "gaps": [
         "tarjetas",
@@ -386,8 +386,8 @@
       "contributors": [],
       "changelog": [
         {
-          "version": "2026-07-23",
-          "changes": "Do not persist PENDING card charges (status \"Pendiente de liquidar\"): ING re-lists a still-pending charge with a fresh id/sequence/balance every sync, so they never dedup and pile up as duplicates — only the stable SETTLED record is kept; account movements have no status and are untouched. Needs extension >= 0.7.0.21 (keep.exclude)."
+          "version": "2026-07-23.1",
+          "changes": "Reverted the pending-charge exclusion: a current-month credit-card purchase is CONFIRMED but stays \"Pendiente de liquidar\" until the monthly settlement, so excluding pending hid real movements. Pending charges are listed again; the pending-duplicate issue (ING churns the id of a still-pending charge between syncs) needs a targeted natural-key dedup instead."
         },
         {
           "version": "2026-07-16",
@@ -399,7 +399,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "leroymerlin-es",
@@ -441,7 +441,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "n26",
@@ -464,7 +464,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/n26.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "openbank-es",
@@ -504,7 +504,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "paypal",
@@ -527,7 +527,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "raisin",
@@ -634,7 +634,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "revolut",
@@ -674,7 +674,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "traderepublic",
@@ -721,7 +721,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     },
     {
       "id": "wizink-es",
@@ -752,7 +752,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-07-23T11:12:26.711Z"
+      "updated": "2026-07-23T11:34:25.476Z"
     }
   ]
 }
