@@ -5,8 +5,8 @@
   "trust": "community",
   "domain": "ingdirect.es",
   "country": "ES",
-  "version": "2026-07-23.1",
-  "minVersion": "0.7.0.21",
+  "version": "2026-07-23.3",
+  "minVersion": "0.7.0.25",
   "categories": [
     "banking"
   ],
@@ -71,6 +71,13 @@
           "params": {
             "limit": 100,
             "filterEru": "false"
+          },
+          "idOverride": {
+            "when": {
+              "field": "status",
+              "present": true
+            },
+            "template": "card|{transactionDate}|{amount}|{transactionId.productId}"
           }
         }
       },
@@ -182,8 +189,8 @@
   ],
   "changelog": [
     {
-      "version": "2026-07-23.1",
-      "changes": "Reverted the pending-charge exclusion: a current-month credit-card purchase is CONFIRMED but stays \"Pendiente de liquidar\" until the monthly settlement, so excluding pending hid real movements. Pending charges are listed again; the pending-duplicate issue (ING churns the id of a still-pending charge between syncs) needs a targeted natural-key dedup instead."
+      "version": "2026-07-23.3",
+      "changes": "Fix credit-card duplicates WITHOUT hiding real movements. A current-month card purchase is confirmed but stays \"Pendiente de liquidar\" until the monthly settlement, and ING re-lists a still-pending charge with a fresh transactionLocalUUID every sync → duplicates. Card movements (items with a `status`) now key by a stable natural id {date|amount|productId} PLUS a per-import ordinal (list.idOverride): two genuinely-distinct charges sharing (date,amount,productId) arrive together in one import → they get ordinals 0,1 and stay separate; a churning re-list of one charge is always ordinal 0 → dedupes; the pending→settled transition dedupes too. Account movements (no status) keep their stable UUID. Needs extension >= 0.7.0.25."
     },
     {
       "version": "2026-07-16",
