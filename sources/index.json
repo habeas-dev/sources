@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T07:02:13.354Z",
+  "generated": "2026-08-08T07:51:29.607Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -28,7 +28,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "amazon",
@@ -52,7 +52,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "americanexpress",
@@ -73,7 +73,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/americanexpress.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "bipdrive-es",
@@ -90,18 +90,22 @@
         "pdf"
       ],
       "crossDomain": [],
-      "version": "2026-07-08",
+      "version": "2026-08-08",
       "minVersion": null,
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-08",
           "changes": "Facturas vía tabla AJAX (from:html); PDF por POST de formulario."
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -120,18 +124,22 @@
       "crossDomain": [
         "api.caixabankpc.com"
       ],
-      "version": "2026-07-08",
+      "version": "2026-08-08",
       "minVersion": "0.1.35",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-08",
           "changes": "Versión inicial: extractos (cross-domain api.caixabankpc.com), captura de DNI, PDF por URL absoluta."
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "carrefour-es",
@@ -150,18 +158,22 @@
         "pdf"
       ],
       "crossDomain": [],
-      "version": "2026-07-25",
+      "version": "2026-08-08",
       "minVersion": null,
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-08",
           "changes": "Tickets y pedidos online (offset pagination); PDF cuando existe."
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "decathlon-es",
@@ -178,18 +190,22 @@
         "json"
       ],
       "crossDomain": [],
-      "version": "2026-07-08",
+      "version": "2026-08-08",
       "minVersion": null,
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-08",
           "changes": "Pedidos/recibos con detalle JSON."
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "degiro",
@@ -210,7 +226,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/degiro.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "dia-es",
@@ -228,18 +244,22 @@
         "pdf"
       ],
       "crossDomain": [],
-      "version": "2026-07-08",
+      "version": "2026-08-08",
       "minVersion": null,
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-08",
           "changes": "Tickets desde el SSR (Vike); factura en PDF por artículo."
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "financiera-elcorteingles-es",
@@ -255,13 +275,17 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-20.3",
+      "version": "2026-08-08",
       "minVersion": "0.5.0",
       "gaps": [],
       "contributors": [
         "David Marín"
       ],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-20.3",
           "changes": "First publish to the live registry. Requires extension >= 0.5.0 (the milestone that ships declarative capturePaths, the login-safe scoped token observer, and the {date:FORMAT} document token this source relies on). Verified end-to-end by the contributor."
@@ -304,7 +328,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "hover-com",
@@ -337,7 +361,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "ikea-es",
@@ -356,13 +380,18 @@
       "crossDomain": [
         "cssom-prod.ingka.com"
       ],
-      "version": "2026-07-08",
+      "version": "2026-08-08",
       "minVersion": "0.1.36",
       "gaps": [],
       "contributors": [],
-      "changelog": [],
+      "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        }
+      ],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "ing-es",
@@ -377,13 +406,17 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-08-08",
+      "version": "2026-08-08.1",
       "minVersion": "0.9.7",
       "gaps": [
         "inversión"
       ],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08.1",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-08-08",
           "changes": "Corrige `gaps`: los movimientos de tarjeta ya se extraen (ver 2026-07-23.3), así que solo queda inversión fuera de cobertura. El dato anterior era obsoleto y se publicaba como limitación."
@@ -406,7 +439,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "leroymerlin-es",
@@ -421,11 +454,15 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-10.3",
+      "version": "2026-08-08",
       "minVersion": "0.1.53.13",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-10.3",
           "changes": "Tickets: no cortar al llegar a un año sin compras (stopAfterEmpty) — antes se paraba en 2025 (sin compras) y ocultaba los tickets más antiguos."
@@ -448,7 +485,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "n26",
@@ -471,7 +508,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/n26.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "openbank-es",
@@ -486,13 +523,17 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-16",
+      "version": "2026-08-08",
       "minVersion": "0.3.0.24",
       "gaps": [
         "tarjetas"
       ],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-16",
           "changes": "Map the movement's running balance (saldo.importe) to record.balanceAfter (promoted to a canonical field for the Cuéntamo contract). Requires extension >= 0.3.0.24."
@@ -511,7 +552,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "pagatelia-es",
@@ -528,15 +569,20 @@
         "pdf"
       ],
       "crossDomain": [],
-      "version": "2026-07-24",
+      "version": "2026-08-08",
       "minVersion": "0.7.0.48",
       "gaps": [],
       "contributors": [
         "David Marín Carreño"
       ],
-      "changelog": [],
+      "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        }
+      ],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "paypal",
@@ -559,7 +605,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "pepeenergy-es",
@@ -576,15 +622,20 @@
         "pdf"
       ],
       "crossDomain": [],
-      "version": "2026-07-24.6",
+      "version": "2026-08-08",
       "minVersion": "0.8.0",
       "gaps": [],
       "contributors": [
         "David Marín Carreño"
       ],
-      "changelog": [],
+      "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        }
+      ],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "pepephone-es",
@@ -601,13 +652,18 @@
         "pdf"
       ],
       "crossDomain": [],
-      "version": "2026-07-27.2",
+      "version": "2026-08-08",
       "minVersion": "0.9.2",
       "gaps": [],
       "contributors": [],
-      "changelog": [],
+      "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        }
+      ],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "raisin",
@@ -714,7 +770,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "revolut",
@@ -754,7 +810,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "traderepublic",
@@ -801,7 +857,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     },
     {
       "id": "wizink-es",
@@ -817,11 +873,15 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-28.1",
+      "version": "2026-08-08",
       "minVersion": "0.9.3",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`. La página por fuente pasa a generarse desde la propia definición, no desde un fichero aparte en la web."
+        },
         {
           "version": "2026-07-10",
           "changes": "Los extractos ahora muestran una etiqueta legible («Extracto <fecha>») en lugar del identificador interno, y llevan el tipo «Extracto»."
@@ -832,7 +892,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-08-08T07:02:13.354Z"
+      "updated": "2026-08-08T07:51:29.607Z"
     }
   ]
 }
