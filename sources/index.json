@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T04:58:14.077Z",
+  "generated": "2026-08-08T07:02:13.354Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -28,7 +28,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "amazon",
@@ -52,7 +52,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "americanexpress",
@@ -73,7 +73,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/americanexpress.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "bipdrive-es",
@@ -101,7 +101,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -131,7 +131,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "carrefour-es",
@@ -161,7 +161,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "decathlon-es",
@@ -189,7 +189,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "degiro",
@@ -210,7 +210,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/degiro.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "dia-es",
@@ -239,7 +239,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "financiera-elcorteingles-es",
@@ -304,7 +304,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "hover-com",
@@ -337,7 +337,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "ikea-es",
@@ -362,7 +362,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "ing-es",
@@ -377,14 +377,17 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-31.1",
+      "version": "2026-08-08",
       "minVersion": "0.9.7",
       "gaps": [
-        "tarjetas",
         "inversión"
       ],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Corrige `gaps`: los movimientos de tarjeta ya se extraen (ver 2026-07-23.3), así que solo queda inversión fuera de cobertura. El dato anterior era obsoleto y se publicaba como limitación."
+        },
         {
           "version": "2026-07-31.1",
           "changes": "Fix intermittent 401 'Authorization Required' (ING Webserver edge) that aborted the whole sync — most often at the account-enumeration step (/position-keeping). Verified via mitmproxy that the SAME authenticated request (same bearer, same 36 session cookies, browser-agnostic) returns 401 one call and 200 the next — a load-balancer/pool routing race (dual lb-3-p-288 / lb-4-p-288 + x-pool-from-dc cookies). ING's own SPA rides it out by retrying; Habeas now does the same via a bounded retry (retry: 401 ×4, 700ms), gated on the raw edge-HTML body so a genuine token-expiry (JSON) 401 still surfaces for re-login. Also replay `baggage` to mirror the SPA. Needs extension >= 0.9.7 (declarative retry in netFetch)."
@@ -403,7 +406,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "leroymerlin-es",
@@ -445,7 +448,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "n26",
@@ -468,7 +471,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/n26.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "openbank-es",
@@ -508,7 +511,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "pagatelia-es",
@@ -533,7 +536,7 @@
       ],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "paypal",
@@ -556,7 +559,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "pepeenergy-es",
@@ -581,7 +584,7 @@
       ],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "pepephone-es",
@@ -604,7 +607,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "raisin",
@@ -711,7 +714,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "revolut",
@@ -751,7 +754,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "traderepublic",
@@ -798,7 +801,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     },
     {
       "id": "wizink-es",
@@ -829,7 +832,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-07-31T04:58:14.077Z"
+      "updated": "2026-08-08T07:02:13.354Z"
     }
   ]
 }
