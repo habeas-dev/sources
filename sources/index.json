@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T07:51:29.607Z",
+  "generated": "2026-08-08T07:59:31.133Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -17,18 +17,22 @@
         "html"
       ],
       "crossDomain": [],
-      "version": "2026-07-16",
+      "version": "2026-08-08",
       "minVersion": "0.3.0",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Adds `content` (bilingual copy for the guide page on habeas.dev) and `brand`."
+        },
         {
           "version": "2026-07-16",
           "changes": "Initial: order history via Alibaba's mtop gateway. Runs in the site tab and reuses the app's own live request payload (hook stashes it) + its lib.mtop signing (no hardcoded blob, no forged signature); paginates by bumping the component pageIndex. Orders extracted from the DIDA component response (itemsFromKeys). Per-order receipt as a self-contained printable HTML invoice, generated from mtop queryorderreceiptinfo (no seed needed — a known flat payload) via a declarative template using AliExpress's own labels."
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "amazon",
@@ -46,13 +50,18 @@
         "pdf"
       ],
       "crossDomain": [],
-      "version": "2026-07-23.4",
+      "version": "2026-08-08",
       "minVersion": "0.7.0.11",
       "gaps": [],
       "contributors": [],
-      "changelog": [],
+      "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Adds `content` (bilingual copy for the guide page on habeas.dev) and `brand`."
+        }
+      ],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "americanexpress",
@@ -73,7 +82,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/americanexpress.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "bipdrive-es",
@@ -105,7 +114,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -139,7 +148,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "carrefour-es",
@@ -173,7 +182,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "decathlon-es",
@@ -205,7 +214,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "degiro",
@@ -226,7 +235,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/degiro.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "dia-es",
@@ -259,7 +268,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "financiera-elcorteingles-es",
@@ -328,7 +337,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "hover-com",
@@ -346,11 +355,15 @@
         "html"
       ],
       "crossDomain": [],
-      "version": "2026-07-13",
+      "version": "2026-08-08",
       "minVersion": null,
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Adds `content` (bilingual copy for the guide page on habeas.dev) and `brand`."
+        },
         {
           "version": "2026-07-13",
           "changes": "Bill in USD (Hover charges USD; was defaulting to EUR)."
@@ -361,7 +374,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "ikea-es",
@@ -391,7 +404,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "ing-es",
@@ -439,7 +452,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "leroymerlin-es",
@@ -485,7 +498,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "n26",
@@ -508,7 +521,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/n26.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "openbank-es",
@@ -552,7 +565,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "pagatelia-es",
@@ -582,7 +595,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "paypal",
@@ -599,13 +612,18 @@
         "json"
       ],
       "crossDomain": [],
-      "version": "2026-07-23.2",
+      "version": "2026-08-08",
       "minVersion": "0.7.0.10",
       "gaps": [],
       "contributors": [],
-      "changelog": [],
+      "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Adds `content` (bilingual copy for the guide page on habeas.dev) and `brand`."
+        }
+      ],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "pepeenergy-es",
@@ -635,7 +653,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "pepephone-es",
@@ -663,7 +681,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "raisin",
@@ -681,13 +699,17 @@
       "crossDomain": [
         "api2.weltsparen.de"
       ],
-      "version": "2026-07-21",
+      "version": "2026-08-08",
       "minVersion": "0.5.0.32",
       "gaps": [],
       "contributors": [
         "David Marín Carreño"
       ],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Adds `content` (bilingual copy for the guide page on habeas.dev) and `brand`."
+        },
         {
           "version": "2026-07-21",
           "changes": "Declared country: \"global\" — the field was missing since the multi-market rename (raisin-es -> raisin), so the catalog showed no 🌐 badge and country filters didn't treat it as worldwide."
@@ -770,7 +792,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "revolut",
@@ -787,11 +809,15 @@
       "crossDomain": [
         "storage.googleapis.com"
       ],
-      "version": "2026-07-16",
+      "version": "2026-08-08",
       "minVersion": "0.3.0.24",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Adds `content` (bilingual copy for the guide page on habeas.dev) and `brand`."
+        },
         {
           "version": "2026-07-16",
           "changes": "Map the running balance (minor-unit scaled) to record.balanceAfter and the completed date to record.valueDate — promoted to canonical fields for the Cuéntamo contract. Requires extension >= 0.3.0.24."
@@ -810,7 +836,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "traderepublic",
@@ -826,11 +852,15 @@
       "country": "global",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-07-17",
+      "version": "2026-08-08",
       "minVersion": "0.3.0.24",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-08",
+          "changes": "Adds `content` (bilingual copy for the guide page on habeas.dev) and `brand`."
+        },
         {
           "version": "2026-07-17",
           "changes": "Parse the trade breakdown into structured fields: units (Shares), price (Share price) and commission (Fee) from the timelineDetailV2 'Transaction' table (English labels — the WS connect requests locale 'en'). 'Free' fees resolve to 0. Requires extension >= 0.3.0.24."
@@ -857,7 +887,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     },
     {
       "id": "wizink-es",
@@ -892,7 +922,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-08-08T07:51:29.607Z"
+      "updated": "2026-08-08T07:59:31.133Z"
     }
   ]
 }
