@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T09:40:35.499Z",
+  "generated": "2026-08-09T06:32:25.915Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -32,7 +32,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "amazon",
@@ -61,7 +61,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "americanexpress",
@@ -82,7 +82,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/americanexpress.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "bipdrive-es",
@@ -114,7 +114,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -148,7 +148,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "carrefour-es",
@@ -182,7 +182,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "decathlon-es",
@@ -214,7 +214,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "degiro",
@@ -235,7 +235,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/degiro.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "dia-es",
@@ -268,7 +268,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "financiera-elcorteingles-es",
@@ -337,7 +337,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "hover-com",
@@ -374,7 +374,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "ikea-es",
@@ -404,7 +404,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "ing-es",
@@ -419,13 +419,17 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-08-08.2",
+      "version": "2026-08-09",
       "minVersion": "0.9.11.4",
       "gaps": [
         "inversión"
       ],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-09",
+          "changes": "La guía dice ya que ING solo sirve unos 90 días de histórico y que en cuenta corriente lo aplica de forma estricta. Quien busca \"descargar mis extractos de ING\" espera su histórico completo; encontrarse tres meses sin aviso es peor que no tener página. Verificado contra una cuenta real: con el recorte del mes que cruza la ventana (extensión 0.9.12) los extractos de ese mes ya se descargan."
+        },
         {
           "version": "2026-08-08.2",
           "changes": "Ventana a 89 días (no 90): el límite de ING cuenta el día de hoy, así que el día más antiguo válido es hoy−89 y pedir hoy−90 se sale por uno. Requiere extensión 0.9.11.4, que además recorta el fromDate del informe mensual a la ventana en vez de pedir desde el día 1 del mes."
@@ -456,7 +460,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "leroymerlin-es",
@@ -502,7 +506,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "n26",
@@ -525,7 +529,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/n26.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "openbank-es",
@@ -569,7 +573,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "pagatelia-es",
@@ -599,7 +603,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "paypal",
@@ -627,7 +631,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "pepeenergy-es",
@@ -657,7 +661,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "pepephone-es",
@@ -685,7 +689,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "raisin",
@@ -796,7 +800,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "revolut",
@@ -840,7 +844,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "traderepublic",
@@ -891,7 +895,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     },
     {
       "id": "wizink-es",
@@ -926,7 +930,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-08-08T09:40:35.499Z"
+      "updated": "2026-08-09T06:32:25.915Z"
     }
   ]
 }
