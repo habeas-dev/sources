@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T08:40:35.913Z",
+  "generated": "2026-08-26T08:54:46.647Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -45,7 +45,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "amazon",
@@ -91,7 +91,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "americanexpress",
@@ -112,7 +112,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/americanexpress.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "bipdrive-es",
@@ -157,7 +157,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -204,7 +204,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "carrefour-es",
@@ -251,7 +251,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "decathlon-es",
@@ -296,7 +296,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "degiro",
@@ -317,7 +317,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/degiro.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "dia-es",
@@ -363,7 +363,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "financiera-elcorteingles-es",
@@ -373,19 +373,26 @@
         "card",
         "loan"
       ],
-      "trust": "community",
+      "trust": "first-party",
       "beta": false,
       "domain": "financieraelcorteingles.es",
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-08-26",
+      "version": "2026-08-26.1",
       "minVersion": "0.5.0",
       "gaps": [],
       "contributors": [
         "David Marín"
       ],
       "changelog": [
+        {
+          "version": "2026-08-26.1",
+          "changes": {
+            "en": "Trust level raised to first-party: written and verified against the real service by the project, not contributed unreviewed. The label describes provenance, not permission — the same-domain guard, the consent screen and every other rule apply identically whatever it says.",
+            "es": "Confianza elevada a first-party: escrita y verificada contra el servicio real por el proyecto, no una aportación sin revisar. La etiqueta describe procedencia, no permisos — la guardia de mismo dominio, la pantalla de consentimiento y las demás reglas se aplican igual diga lo que diga."
+          }
+        },
         {
           "version": "2026-08-26",
           "changes": {
@@ -472,7 +479,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "hover-com",
@@ -525,7 +532,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "ikea-es",
@@ -572,7 +579,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "ing-es",
@@ -581,19 +588,26 @@
       "categories": [
         "banking"
       ],
-      "trust": "community",
+      "trust": "first-party",
       "beta": false,
       "domain": "ingdirect.es",
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-08-26",
+      "version": "2026-08-26.1",
       "minVersion": "0.9.11.4",
       "gaps": [
         "inversión"
       ],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-26.1",
+          "changes": {
+            "en": "Trust level raised to first-party: written and verified against the real service by the project, not contributed unreviewed. The label describes provenance, not permission — the same-domain guard, the consent screen and every other rule apply identically whatever it says.",
+            "es": "Confianza elevada a first-party: escrita y verificada contra el servicio real por el proyecto, no una aportación sin revisar. La etiqueta describe procedencia, no permisos — la guardia de mismo dominio, la pantalla de consentimiento y las demás reglas se aplican igual diga lo que diga."
+          }
+        },
         {
           "version": "2026-08-26",
           "changes": {
@@ -659,7 +673,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "leroymerlin-es",
@@ -730,7 +744,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "n26",
@@ -753,7 +767,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/n26.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "openbank-es",
@@ -762,19 +776,26 @@
       "categories": [
         "banking"
       ],
-      "trust": "community",
+      "trust": "first-party",
       "beta": false,
       "domain": "openbank.es",
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-08-26",
+      "version": "2026-08-26.1",
       "minVersion": "0.3.0.24",
       "gaps": [
         "tarjetas"
       ],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-26.1",
+          "changes": {
+            "en": "Trust level raised to first-party: written and verified against the real service by the project, not contributed unreviewed. The label describes provenance, not permission — the same-domain guard, the consent screen and every other rule apply identically whatever it says.",
+            "es": "Confianza elevada a first-party: escrita y verificada contra el servicio real por el proyecto, no una aportación sin revisar. La etiqueta describe procedencia, no permisos — la guardia de mismo dominio, la pantalla de consentimiento y las demás reglas se aplican igual diga lo que diga."
+          }
+        },
         {
           "version": "2026-08-26",
           "changes": {
@@ -819,7 +840,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "pagatelia-es",
@@ -859,7 +880,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "paypal",
@@ -868,7 +889,7 @@
       "categories": [
         "banking"
       ],
-      "trust": "community",
+      "trust": "first-party",
       "beta": false,
       "domain": "paypal.com",
       "country": "global",
@@ -876,11 +897,18 @@
         "json"
       ],
       "crossDomain": [],
-      "version": "2026-08-26",
+      "version": "2026-08-26.1",
       "minVersion": "0.7.0.10",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-26.1",
+          "changes": {
+            "en": "Trust level raised to first-party: written and verified against the real service by the project, not contributed unreviewed. The label describes provenance, not permission — the same-domain guard, the consent screen and every other rule apply identically whatever it says.",
+            "es": "Confianza elevada a first-party: escrita y verificada contra el servicio real por el proyecto, no una aportación sin revisar. La etiqueta describe procedencia, no permisos — la guardia de mismo dominio, la pantalla de consentimiento y las demás reglas se aplican igual diga lo que diga."
+          }
+        },
         {
           "version": "2026-08-26",
           "changes": {
@@ -904,7 +932,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "pepeenergy-es",
@@ -944,7 +972,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "pepephone-es",
@@ -982,7 +1010,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "raisin",
@@ -992,7 +1020,7 @@
         "banking",
         "investment"
       ],
-      "trust": "community",
+      "trust": "first-party",
       "beta": false,
       "domain": "raisin.com",
       "country": "global",
@@ -1000,13 +1028,20 @@
       "crossDomain": [
         "api2.weltsparen.de"
       ],
-      "version": "2026-08-26",
+      "version": "2026-08-26.1",
       "minVersion": "0.5.0.32",
       "gaps": [],
       "contributors": [
         "David Marín Carreño"
       ],
       "changelog": [
+        {
+          "version": "2026-08-26.1",
+          "changes": {
+            "en": "Trust level raised to first-party: written and verified against the real service by the project, not contributed unreviewed. The label describes provenance, not permission — the same-domain guard, the consent screen and every other rule apply identically whatever it says.",
+            "es": "Confianza elevada a first-party: escrita y verificada contra el servicio real por el proyecto, no una aportación sin revisar. La etiqueta describe procedencia, no permisos — la guardia de mismo dominio, la pantalla de consentimiento y las demás reglas se aplican igual diga lo que diga."
+          }
+        },
         {
           "version": "2026-08-26",
           "changes": {
@@ -1163,7 +1198,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "revolut",
@@ -1172,7 +1207,7 @@
       "categories": [
         "banking"
       ],
-      "trust": "community",
+      "trust": "first-party",
       "beta": false,
       "domain": "revolut.com",
       "country": "global",
@@ -1180,11 +1215,18 @@
       "crossDomain": [
         "storage.googleapis.com"
       ],
-      "version": "2026-08-26.3",
+      "version": "2026-08-26.4",
       "minVersion": "0.9.3",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-26.4",
+          "changes": {
+            "en": "Trust level raised to first-party: written and verified against the real service by the project, not contributed unreviewed. The label describes provenance, not permission — the same-domain guard, the consent screen and every other rule apply identically whatever it says.",
+            "es": "Confianza elevada a first-party: escrita y verificada contra el servicio real por el proyecto, no una aportación sin revisar. La etiqueta describe procedencia, no permisos — la guardia de mismo dominio, la pantalla de consentimiento y las demás reglas se aplican igual diga lo que diga."
+          }
+        },
         {
           "version": "2026-08-26.3",
           "changes": {
@@ -1250,7 +1292,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "traderepublic",
@@ -1260,17 +1302,24 @@
         "banking",
         "investment"
       ],
-      "trust": "community",
+      "trust": "first-party",
       "beta": false,
       "domain": "traderepublic.com",
       "country": "global",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-08-26",
+      "version": "2026-08-26.1",
       "minVersion": "0.3.0.24",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-26.1",
+          "changes": {
+            "en": "Trust level raised to first-party: written and verified against the real service by the project, not contributed unreviewed. The label describes provenance, not permission — the same-domain guard, the consent screen and every other rule apply identically whatever it says.",
+            "es": "Confianza elevada a first-party: escrita y verificada contra el servicio real por el proyecto, no una aportación sin revisar. La etiqueta describe procedencia, no permisos — la guardia de mismo dominio, la pantalla de consentimiento y las demás reglas se aplican igual diga lo que diga."
+          }
+        },
         {
           "version": "2026-08-26",
           "changes": {
@@ -1329,7 +1378,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     },
     {
       "id": "wizink-es",
@@ -1380,7 +1429,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-08-26T08:40:35.913Z"
+      "updated": "2026-08-26T08:54:46.647Z"
     }
   ]
 }
