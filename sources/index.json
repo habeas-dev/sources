@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T07:45:12.215Z",
+  "generated": "2026-08-26T06:07:28.052Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -32,7 +32,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "amazon",
@@ -65,7 +65,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "americanexpress",
@@ -86,7 +86,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/americanexpress.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "bipdrive-es",
@@ -118,7 +118,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "caixabank-consumer-es",
@@ -152,7 +152,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "carrefour-es",
@@ -186,7 +186,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "decathlon-es",
@@ -218,7 +218,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "degiro",
@@ -239,7 +239,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/degiro.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "dia-es",
@@ -272,7 +272,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "financiera-elcorteingles-es",
@@ -341,7 +341,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "hover-com",
@@ -378,7 +378,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "ikea-es",
@@ -412,7 +412,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "ing-es",
@@ -468,7 +468,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "leroymerlin-es",
@@ -514,7 +514,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "n26",
@@ -537,7 +537,7 @@
       "contributors": [],
       "changelog": [],
       "url": "https://habeas-dev.github.io/sources/n26.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "openbank-es",
@@ -581,7 +581,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "pagatelia-es",
@@ -611,7 +611,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "paypal",
@@ -643,7 +643,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "pepeenergy-es",
@@ -673,7 +673,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "pepephone-es",
@@ -701,7 +701,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "raisin",
@@ -812,7 +812,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "revolut",
@@ -829,11 +829,22 @@
       "crossDomain": [
         "storage.googleapis.com"
       ],
-      "version": "2026-08-12",
+      "version": "2026-08-26.1",
       "minVersion": "0.9.3",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-26.1",
+          "changes": "Drops card verifications (0 EUR authorisations, flagged cardVerification) — they move no money and are not movements. Fixes vault transfers: Revolut books them from the paying side, so money returning from a savings vault arrived negative, and the balance they carry belongs to the vault rather than to the personal account. Reported against 167 real movements, of which 151 of 166 balance links already chained to the cent. Also drops anything whose state is not COMPLETED (5 DECLINED + 1 REVERTED in the sample were retried charges whose successful twin also arrived)."
+        },
+        {
+          "version": "2026-08-26",
+          "changes": {
+            "en": "Records authorship: the session was recorded and the definition written by the maintainer. No change to extraction.",
+            "es": "Registra la autoría: la sesión la grabó y la definición la escribió el mantenedor. No cambia la extracción."
+          }
+        },
         {
           "version": "2026-08-12",
           "changes": "La sincronización automática ya no arranca hasta que app.revolut.com/home ha terminado de cargar. La app dispara peticiones autenticadas en pantallas anteriores, así que una sincronización podía empezar antes de que existiera la vista con los datos."
@@ -860,7 +871,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "traderepublic",
@@ -911,7 +922,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     },
     {
       "id": "wizink-es",
@@ -946,7 +957,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-08-25T07:45:12.215Z"
+      "updated": "2026-08-26T06:07:28.052Z"
     }
   ]
 }
