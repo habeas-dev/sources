@@ -402,8 +402,8 @@
     {
       "version": "2026-07-20.12",
       "changes": {
-        "en": "Readable account/deposit names: savings show \"Cuenta <bank>\", deposits \"Depósito <bank> <rate>% TAE - <opening date>\" using the real bank name (deposit_taking_bank.name). Deposit date is now the opening date (deposit.opening_date). (Term wording and decimal comma still pending a formatting helper.)",
-        "es": "Nombres legibles de cuenta y depósito: el ahorro muestra «Cuenta <banco>» y los depósitos «Depósito <banco> <tipo>% TAE - <fecha de apertura>», con el nombre real del banco (deposit_taking_bank.name). La fecha del depósito es ahora la de apertura (deposit.opening_date). (La redacción del plazo y la coma decimal siguen pendientes de un ayudante de formato.)"
+        "en": "Accounts and deposits now have readable names, with the real bank, the rate and the opening date, instead of an internal code.",
+        "es": "Las cuentas y los depósitos tienen ya nombres legibles, con el banco real, el tipo y la fecha de apertura, en vez de un código interno."
       }
     },
     {

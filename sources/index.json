@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T05:16:44.215Z",
+  "generated": "2026-08-27T05:30:35.682Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -45,7 +45,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "98e9b859b1efed48"
     },
     {
@@ -92,7 +92,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "c7146f552e1247da"
     },
     {
@@ -160,7 +160,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "3af13d40acf79399"
     },
     {
@@ -208,7 +208,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "85a15cc6be7d34ed"
     },
     {
@@ -256,7 +256,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "d250117a4b6f1246"
     },
     {
@@ -302,7 +302,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "573802f8e8b2134a"
     },
     {
@@ -371,7 +371,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "31c6cd917ab353eb"
     },
     {
@@ -488,7 +488,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-08-26T10:55:04+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "7f82d12f04f0e9d4"
     },
     {
@@ -542,7 +542,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "e1ac558d1e5ee029"
     },
     {
@@ -590,7 +590,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "266b3983f4125a18"
     },
     {
@@ -685,7 +685,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-26T10:55:04+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "250c771b4746608e"
     },
     {
@@ -757,7 +757,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "428015c7f5e5803e"
     },
     {
@@ -855,7 +855,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-08-26T10:55:04+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "4b06808638f531d0"
     },
     {
@@ -896,7 +896,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "a3445d821787542f"
     },
     {
@@ -949,7 +949,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-08-26T10:55:04+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "296abe9ffd4bdebb"
     },
     {
@@ -990,7 +990,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "ece1fe023254272a"
     },
     {
@@ -1029,7 +1029,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "57acad32816ff973"
     },
     {
@@ -1128,8 +1128,8 @@
         {
           "version": "2026-07-20.12",
           "changes": {
-            "en": "Readable account/deposit names: savings show \"Cuenta <bank>\", deposits \"Depósito <bank> <rate>% TAE - <opening date>\" using the real bank name (deposit_taking_bank.name). Deposit date is now the opening date (deposit.opening_date). (Term wording and decimal comma still pending a formatting helper.)",
-            "es": "Nombres legibles de cuenta y depósito: el ahorro muestra «Cuenta <banco>» y los depósitos «Depósito <banco> <tipo>% TAE - <fecha de apertura>», con el nombre real del banco (deposit_taking_bank.name). La fecha del depósito es ahora la de apertura (deposit.opening_date). (La redacción del plazo y la coma decimal siguen pendientes de un ayudante de formato.)"
+            "en": "Accounts and deposits now have readable names, with the real bank, the rate and the opening date, instead of an internal code.",
+            "es": "Las cuentas y los depósitos tienen ya nombres legibles, con el banco real, el tipo y la fecha de apertura, en vez de un código interno."
           }
         },
         {
@@ -1218,7 +1218,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-26T10:55:04+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "906bed24463093d2"
     },
     {
@@ -1258,15 +1258,15 @@
         {
           "version": "2026-08-26.3",
           "changes": {
-            "en": "Documents a known limit rather than fixing it: weekend foreign-currency card payments arrive about 1% short, because Revolut’s out-of-hours surcharge leaves the balance but never appears in the data. 1.48 EUR across 3 of 167 movements, and every way of correcting it costs more than it recovers.",
-            "es": "Documenta un límite conocido en vez de arreglarlo: los pagos con tarjeta en divisa hechos en fin de semana llegan un 1% cortos, porque el recargo de Revolut fuera de horario sale del saldo pero no aparece en los datos. Son 1,48 € en 3 de 167 movimientos, y cualquier forma de corregirlo cuesta más de lo que recupera."
+            "en": "Documents a limit rather than fixing it: a card payment made abroad at the weekend arrived about 1% short, because Revolut's out-of-hours surcharge left the balance without ever appearing in the data. Fixed later, in 2026-08-26.6.",
+            "es": "Documenta un límite en vez de arreglarlo: un pago con tarjeta en divisa hecho en fin de semana llegaba un 1% corto, porque el recargo de Revolut fuera de horario salía del saldo sin aparecer nunca en los datos. Corregido después, en la 2026-08-26.6."
           }
         },
         {
           "version": "2026-08-26.1",
           "changes": {
-            "en": "Drops card verifications (0 EUR authorisations, flagged cardVerification) — they move no money and are not movements. Fixes vault transfers: Revolut books them from the paying side, so money returning from a savings vault arrived negative, and the balance they carry belongs to the vault rather than to the personal account. Reported against 167 real movements, of which 151 of 166 balance links already chained to the cent. Also drops anything whose state is not COMPLETED (5 DECLINED + 1 REVERTED in the sample were retried charges whose successful twin also arrived).",
-            "es": "Descarta las verificaciones de tarjeta (autorizaciones de 0 EUR, marcadas con cardVerification): no mueven dinero y no son movimientos. Corrige las transferencias con vaults: Revolut las contabiliza desde el lado que paga, así que el dinero que volvía de un bolsillo de ahorro llegaba en negativo, y el saldo que arrastran pertenece al vault y no a la cuenta personal. Reportado contra 167 movimientos reales, de los cuales 151 de 166 enlaces de saldo ya encadenaban al céntimo. Descarta además todo lo que no esté en estado COMPLETED (los 5 DECLINED y 1 REVERTED de la muestra eran cargos reintentados cuyo gemelo correcto también llegaba)."
+            "en": "Three kinds of entry stop being listed as movements, because they are not. The 0 EUR authorisation a shop makes to check your card is alive; declined and reverted charges, whose successful retry also arrives, so the purchase was counted up to three times. And money coming back from a savings vault no longer arrives negative, nor carrying the vault's balance instead of your account's.",
+            "es": "Tres tipos de apunte dejan de listarse como movimientos, porque no lo son. La autorización de 0 € que hace un comercio para comprobar que tu tarjeta está viva; los cargos denegados y revertidos, cuyo reintento correcto también llega, de modo que la compra se contaba hasta tres veces. Y el dinero que vuelve de un bolsillo de ahorro ya no llega en negativo, ni arrastrando el saldo del bolsillo en lugar del de tu cuenta."
           }
         },
         {
@@ -1293,8 +1293,8 @@
         {
           "version": "2026-07-16",
           "changes": {
-            "en": "Map the running balance (minor-unit scaled) to record.balanceAfter and the completed date to record.valueDate — promoted to canonical fields for the Cuéntamo contract. Requires extension >= 0.3.0.24.",
-            "es": "Mapea el saldo tras el movimiento (escalado desde unidades menores) a record.balanceAfter y la fecha de completado a record.valueDate — promovidos a campos canónicos para el contrato del consumidor. Requiere extensión >= 0.3.0.24."
+            "en": "Each movement now carries the account balance left after it, and the date it was settled. Needs Habeas 0.3.0.24 or newer.",
+            "es": "Cada movimiento lleva ahora el saldo que queda en la cuenta después de él, y la fecha en que se liquidó. Requiere Habeas 0.3.0.24 o posterior."
           }
         },
         {
@@ -1320,7 +1320,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-08-27T07:12:43+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "456c52a808e26093"
     },
     {
@@ -1373,15 +1373,15 @@
         {
           "version": "2026-07-16",
           "changes": {
-            "en": "Timeline stream now emits investment@2 (broker trade/cash): recordType inferred from the extracted ISIN, side/kind mapped from the timeline eventType, instrument{isin,name}, and the settlement account (cashAccountNumber). Trade quantity/price/fees remain in record.extra.detail (localized text) pending structured parsing. Requires extension >= 0.3.0.24.",
-            "es": "El stream de timeline emite ya investment@2 (operación/efectivo de bróker): el recordType se infiere del ISIN extraído, side/kind se mapean desde el eventType del timeline, instrument{isin,name} y la cuenta de liquidación (cashAccountNumber). La cantidad, el precio y las comisiones de la operación siguen en record.extra.detail (texto localizado) a la espera de un análisis estructurado. Requiere extensión >= 0.3.0.24."
+            "en": "Your timeline now arrives as investment records: each one says whether it was a trade or a cash movement, which instrument it concerned and into which account it settled. The quantity, price and fees of a trade still arrive only as the text Trade Republic shows. Needs Habeas 0.3.0.24 or newer.",
+            "es": "Tu timeline llega ya como registros de inversión: cada uno indica si fue una operación o un movimiento de efectivo, sobre qué instrumento y en qué cuenta se liquidó. La cantidad, el precio y las comisiones de una operación siguen llegando solo como el texto que muestra Trade Republic. Requiere Habeas 0.3.0.24 o posterior."
           }
         },
         {
           "version": "2026-07-15.3",
           "changes": {
-            "en": "Add monthly documents: the account statement PDF (accountstatement/statement?fromDate&toDate) and the monthly transactions CSV (async export job: POST request → poll status → download), per completed month.",
-            "es": "Añade documentos mensuales: el PDF del extracto de cuenta (accountstatement/statement?fromDate&toDate) y el CSV mensual de transacciones (trabajo de exportación asíncrono: POST de la petición → consulta de estado → descarga), por cada mes cerrado."
+            "en": "Adds the monthly account statement as a PDF and the month's transactions as a CSV, one of each per completed month.",
+            "es": "Añade el extracto mensual de la cuenta en PDF y las transacciones del mes en CSV, uno de cada por cada mes cerrado."
           }
         },
         {
@@ -1407,7 +1407,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-08-26T10:55:04+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "7898e0c91abc8239"
     },
     {
@@ -1459,7 +1459,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-08-26T10:40:50+02:00",
+      "updated": "2026-08-27T07:17:06+02:00",
       "behaviourHash": "ca837b525a0f4156"
     }
   ]
