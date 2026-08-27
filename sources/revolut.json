@@ -239,8 +239,8 @@
     {
       "version": "2026-08-08",
       "changes": {
-        "en": "Adds `content` (bilingual copy for the guide page on habeas.dev) and `brand`.",
-        "es": "Añade `content` (copy bilingüe de la guía en habeas.dev) y `brand`."
+        "en": "No change to what this source extracts. This version gave it its guide page on habeas.dev.",
+        "es": "Sin cambios en lo que extrae esta fuente. Esta versión le dio su página de guía en habeas.dev."
       }
     },
     {
@@ -267,8 +267,8 @@
     {
       "version": "2026-07-15",
       "changes": {
-        "en": "Initial: personal transactions across all accounts, paged by the `to` timestamp cursor; cookie + captured x-device-id; minor-unit amounts scaled per ISO 4217.",
-        "es": "Inicial: movimientos personales de todas las cuentas, paginados por el cursor de marca temporal `to`; cookie más x-device-id capturado; importes en unidades menores escalados según ISO 4217."
+        "en": "Your Revolut movements across all of your accounts.",
+        "es": "Tus movimientos de Revolut en todas tus cuentas."
       }
     }
   ],
