@@ -197,8 +197,8 @@
     {
       "version": "2026-07-17",
       "changes": {
-        "en": "Parse the trade breakdown into structured fields: units (Shares), price (Share price) and commission (Fee) from the timelineDetailV2 'Transaction' table (English labels — the WS connect requests locale 'en'). 'Free' fees resolve to 0. Requires extension >= 0.3.0.24.",
-        "es": "Analiza el desglose de la operación en campos estructurados: títulos (Shares), precio (Share price) y comisión (Fee) desde la tabla 'Transaction' de timelineDetailV2 (etiquetas en inglés — la conexión WS pide locale 'en'). Las comisiones 'Free' se resuelven como 0. Requiere extensión >= 0.3.0.24."
+        "en": "Trades now arrive with the number of shares, the price and the commission as separate figures instead of only as text. Needs Habeas 0.3.0.24 or newer.",
+        "es": "Las operaciones llegan ahora con el número de títulos, el precio y la comisión como cifras separadas, en vez de solo como texto. Requiere Habeas 0.3.0.24 o posterior."
       }
     },
     {
