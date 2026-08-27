@@ -242,13 +242,15 @@
       "slug": "trade-republic-statements",
       "docs": "transactions and statements",
       "h1": "Download all your Trade Republic transactions and statements at once",
-      "intro": "Trade Republic publishes your statements as PDF or CSV, period by period. If you want the full record of your positions and movements in one place, you are the one assembling it."
+      "intro": "Trade Republic publishes your statements as PDF or CSV, period by period. If you want the full record of your positions and movements in one place, you are the one assembling it.",
+      "title": "How to download your Trade Republic transactions and statements"
     },
     "es": {
       "slug": "extractos-trade-republic",
       "docs": "movimientos y extractos",
       "h1": "Descarga todos tus movimientos y extractos de Trade Republic de una vez",
-      "intro": "Trade Republic publica tus extractos en PDF o CSV, periodo a periodo. Si quieres el registro completo de tus posiciones y movimientos en un solo sitio, el que lo va montando eres tú."
+      "intro": "Trade Republic publica tus extractos en PDF o CSV, periodo a periodo. Si quieres el registro completo de tus posiciones y movimientos en un solo sitio, el que lo va montando eres tú.",
+      "title": "Cómo descargar tus movimientos y extractos de Trade Republic"
     }
   },
   "brand": "Trade Republic"

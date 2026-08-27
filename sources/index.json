@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T14:49:14.829Z",
+  "generated": "2026-08-27T14:51:50.872Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -45,7 +45,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "98e9b859b1efed48"
     },
     {
@@ -92,7 +92,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "c7146f552e1247da"
     },
     {
@@ -160,7 +160,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "3af13d40acf79399"
     },
     {
@@ -208,7 +208,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "85a15cc6be7d34ed"
     },
     {
@@ -256,7 +256,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "d250117a4b6f1246"
     },
     {
@@ -302,7 +302,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "573802f8e8b2134a"
     },
     {
@@ -371,7 +371,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "31c6cd917ab353eb"
     },
     {
@@ -488,7 +488,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-08-27T07:33:43+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "7f82d12f04f0e9d4"
     },
     {
@@ -542,7 +542,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "e1ac558d1e5ee029"
     },
     {
@@ -590,7 +590,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-08-27T07:33:43+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "266b3983f4125a18"
     },
     {
@@ -685,7 +685,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-27T07:33:43+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "250c771b4746608e"
     },
     {
@@ -757,7 +757,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "428015c7f5e5803e"
     },
     {
@@ -855,7 +855,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "4b06808638f531d0"
     },
     {
@@ -896,7 +896,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "a3445d821787542f"
     },
     {
@@ -949,7 +949,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "296abe9ffd4bdebb"
     },
     {
@@ -990,7 +990,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "ece1fe023254272a"
     },
     {
@@ -1029,7 +1029,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-08-27T07:17:06+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "57acad32816ff973"
     },
     {
@@ -1218,7 +1218,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-27T07:33:43+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "906bed24463093d2"
     },
     {
@@ -1320,7 +1320,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-08-27T07:30:46+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "456c52a808e26093"
     },
     {
@@ -1407,7 +1407,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-08-27T07:33:43+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "7898e0c91abc8239"
     },
     {
@@ -1459,7 +1459,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-08-27T07:33:43+02:00",
+      "updated": "2026-08-27T16:49:26+02:00",
       "behaviourHash": "ca837b525a0f4156"
     }
   ]
