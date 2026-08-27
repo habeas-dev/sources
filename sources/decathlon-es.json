@@ -92,13 +92,13 @@
     "en": {
       "slug": "decathlon-receipts",
       "docs": "purchase receipts",
-      "h1": "How to download your Decathlon receipts",
+      "h1": "Download all your Decathlon receipts at once",
       "intro": "Decathlon keeps your purchase history tied to your account, with no option to export the whole thing."
     },
     "es": {
       "slug": "tickets-decathlon",
       "docs": "tickets de compra",
-      "h1": "Cómo descargar tus tickets de Decathlon",
+      "h1": "Descarga todos tus tickets de Decathlon de una vez",
       "intro": "Decathlon guarda tu historial de compras asociado a tu cuenta, pero sin una opción de exportarlo entero."
     }
   },

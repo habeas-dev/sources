@@ -276,13 +276,13 @@
     "en": {
       "slug": "revolut-statements",
       "docs": "transactions and statements",
-      "h1": "How to download your Revolut transactions and statements",
+      "h1": "Download all your Revolut transactions and statements at once",
       "intro": "Revolut offers statements as PDF or CSV, one period at a time. Building a continuous history, or keeping it alongside your other accounts, still means going back every month and downloading by hand."
     },
     "es": {
       "slug": "extractos-revolut",
       "docs": "movimientos y extractos",
-      "h1": "Cómo descargar tus movimientos y extractos de Revolut",
+      "h1": "Descarga todos tus movimientos y extractos de Revolut de una vez",
       "intro": "Revolut ofrece extractos en PDF o CSV, un periodo cada vez. Construir un histórico continuo, o mantenerlo junto al de tus otras cuentas, sigue exigiendo volver cada mes y descargar a mano."
     }
   },
