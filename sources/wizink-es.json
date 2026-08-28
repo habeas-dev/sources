@@ -15,7 +15,7 @@
   },
   "domain": "wizink.es",
   "country": "ES",
-  "version": "2026-08-26",
+  "version": "2026-08-28",
   "currency": "EUR",
   "categories": [
     "card",
@@ -87,12 +87,6 @@
           "method": "POST",
           "maxPeriods": 24,
           "periods": {
-            "current": {
-              "params": {
-                "pagename": "ECOM_SiteEntry/WZPRI/CardDetail/NewToday"
-              },
-              "body": "accountNumber={group.accountNumber}&cardNumber={group.cardNumber}&option=today&securityToken={csrf}"
-            },
             "dates": {
               "params": {
                 "pagename": "ECOM_SiteEntry/WZPRI/CardDetail/Today/ListExtracts"
@@ -227,6 +221,13 @@
   ],
   "changelog": [
     {
+      "version": "2026-08-28",
+      "changes": {
+        "en": "Pending charges are no longer collected, and each movement now keeps the same identity between syncs. A pending charge is provisional — its amount, date and wording can all still change — and WiZink lists it a second time inside the statement that bills it, so the same purchase was being saved twice. From now on a movement is collected once, from its statement, with its final values. Its identity is also built from what the values mean rather than from how the page painted them, so a change of styling on the website can no longer turn one movement into two. One consequence, once: on the first sync after this update your card movements are treated as new, because their identity has changed.",
+        "es": "Ya no se recogen los cargos pendientes, y cada movimiento conserva la misma identidad entre sincronizaciones. Un cargo pendiente es provisional — su importe, su fecha y su texto todavía pueden cambiar — y WiZink lo lista una segunda vez dentro del extracto que lo liquida, así que la misma compra se guardaba dos veces. A partir de ahora un movimiento se recoge una sola vez, desde su extracto y con sus valores definitivos. Su identidad, además, se construye con lo que significan los valores y no con cómo los pintaba la web, así que un cambio de estilo en la página ya no puede convertir un movimiento en dos. Una consecuencia, una sola vez: en la primera sincronización tras esta actualización tus movimientos de tarjeta se tratan como nuevos, porque su identidad ha cambiado."
+      }
+    },
+    {
       "version": "2026-08-26",
       "changes": {
         "en": "Records authorship: the session was recorded and the definition written by the maintainer. No change to extraction.",
@@ -255,7 +256,7 @@
       }
     }
   ],
-  "minVersion": "0.9.3",
+  "minVersion": "0.10.2",
   "content": {
     "en": {
       "slug": "wizink-statements",

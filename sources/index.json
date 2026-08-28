@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T14:51:50.872Z",
+  "generated": "2026-08-28T15:15:10.876Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -45,7 +45,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/aliexpress.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "98e9b859b1efed48"
     },
     {
@@ -92,7 +92,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/amazon.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "c7146f552e1247da"
     },
     {
@@ -160,7 +160,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/bipdrive-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "3af13d40acf79399"
     },
     {
@@ -208,7 +208,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/caixabank-consumer-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "85a15cc6be7d34ed"
     },
     {
@@ -256,7 +256,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/carrefour-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "d250117a4b6f1246"
     },
     {
@@ -302,7 +302,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/decathlon-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "573802f8e8b2134a"
     },
     {
@@ -371,7 +371,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/dia-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "31c6cd917ab353eb"
     },
     {
@@ -488,7 +488,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/financiera-elcorteingles-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "7f82d12f04f0e9d4"
     },
     {
@@ -542,7 +542,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/hover-com.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "e1ac558d1e5ee029"
     },
     {
@@ -590,7 +590,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ikea-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "266b3983f4125a18"
     },
     {
@@ -685,7 +685,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "250c771b4746608e"
     },
     {
@@ -757,7 +757,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/leroymerlin-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "428015c7f5e5803e"
     },
     {
@@ -855,7 +855,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/openbank-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "4b06808638f531d0"
     },
     {
@@ -896,7 +896,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pagatelia-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "a3445d821787542f"
     },
     {
@@ -949,7 +949,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/paypal.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "296abe9ffd4bdebb"
     },
     {
@@ -990,7 +990,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepeenergy-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "ece1fe023254272a"
     },
     {
@@ -1029,7 +1029,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/pepephone-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "57acad32816ff973"
     },
     {
@@ -1218,7 +1218,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "906bed24463093d2"
     },
     {
@@ -1236,11 +1236,18 @@
       "crossDomain": [
         "storage.googleapis.com"
       ],
-      "version": "2026-08-26.6",
-      "minVersion": "0.10.0.1",
+      "version": "2026-08-28",
+      "minVersion": "0.10.2",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-28",
+          "changes": {
+            "en": "Each movement now keeps the same identity between syncs, so it is not saved twice. Revolut issues a new internal reference for the same completed movement from one visit to the next, and that reference was what identified it, so the same purchase came back as a new one. It is now identified by the account, date, amount, currency and description instead. One consequence, once: on the first sync after this update your Revolut movements are treated as new, because their identity has changed.",
+            "es": "Cada movimiento conserva ahora la misma identidad entre sincronizaciones, así que deja de guardarse dos veces. Revolut emite una referencia interna nueva para el mismo movimiento ya completado de una visita a otra, y esa referencia era lo que lo identificaba, así que la misma compra volvía como si fuera nueva. Ahora se identifica por la cuenta, la fecha, el importe, la divisa y el concepto. Una consecuencia, una sola vez: en la primera sincronización tras esta actualización tus movimientos de Revolut se tratan como nuevos, porque su identidad ha cambiado."
+          }
+        },
         {
           "version": "2026-08-26.6",
           "changes": {
@@ -1320,8 +1327,8 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/revolut.json",
-      "updated": "2026-08-27T16:49:26+02:00",
-      "behaviourHash": "456c52a808e26093"
+      "updated": "2026-08-27T16:51:51+02:00",
+      "behaviourHash": "7232204f9f330738"
     },
     {
       "id": "traderepublic",
@@ -1407,7 +1414,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/traderepublic.json",
-      "updated": "2026-08-27T16:49:26+02:00",
+      "updated": "2026-08-27T16:51:51+02:00",
       "behaviourHash": "7898e0c91abc8239"
     },
     {
@@ -1424,11 +1431,18 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-08-26",
-      "minVersion": "0.9.3",
+      "version": "2026-08-28",
+      "minVersion": "0.10.2",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-08-28",
+          "changes": {
+            "en": "Pending charges are no longer collected, and each movement now keeps the same identity between syncs. A pending charge is provisional — its amount, date and wording can all still change — and WiZink lists it a second time inside the statement that bills it, so the same purchase was being saved twice. From now on a movement is collected once, from its statement, with its final values. Its identity is also built from what the values mean rather than from how the page painted them, so a change of styling on the website can no longer turn one movement into two. One consequence, once: on the first sync after this update your card movements are treated as new, because their identity has changed.",
+            "es": "Ya no se recogen los cargos pendientes, y cada movimiento conserva la misma identidad entre sincronizaciones. Un cargo pendiente es provisional — su importe, su fecha y su texto todavía pueden cambiar — y WiZink lo lista una segunda vez dentro del extracto que lo liquida, así que la misma compra se guardaba dos veces. A partir de ahora un movimiento se recoge una sola vez, desde su extracto y con sus valores definitivos. Su identidad, además, se construye con lo que significan los valores y no con cómo los pintaba la web, así que un cambio de estilo en la página ya no puede convertir un movimiento en dos. Una consecuencia, una sola vez: en la primera sincronización tras esta actualización tus movimientos de tarjeta se tratan como nuevos, porque su identidad ha cambiado."
+          }
+        },
         {
           "version": "2026-08-26",
           "changes": {
@@ -1459,8 +1473,8 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
-      "updated": "2026-08-27T16:49:26+02:00",
-      "behaviourHash": "ca837b525a0f4156"
+      "updated": "2026-08-27T16:51:51+02:00",
+      "behaviourHash": "6e437127a24f9028"
     }
   ]
 }
