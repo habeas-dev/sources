@@ -15,7 +15,7 @@
   },
   "domain": "wizink.es",
   "country": "ES",
-  "version": "2026-08-28",
+  "version": "2026-09-15",
   "currency": "EUR",
   "categories": [
     "card",
@@ -87,6 +87,13 @@
           "method": "POST",
           "maxPeriods": 24,
           "periods": {
+            "current": {
+              "params": {
+                "pagename": "ECOM_SiteEntry/WZPRI/CardDetail/NewToday"
+              },
+              "body": "accountNumber={group.accountNumber}&cardNumber={group.cardNumber}&option=today&securityToken={csrf}",
+              "after": "Movimientos a d"
+            },
             "dates": {
               "params": {
                 "pagename": "ECOM_SiteEntry/WZPRI/CardDetail/Today/ListExtracts"
@@ -221,6 +228,13 @@
   ],
   "changelog": [
     {
+      "version": "2026-09-15",
+      "changes": {
+        "en": "This month's card movements are collected again. They had stopped appearing: the change that removed provisional pending charges also dropped the whole current, not-yet-billed period, so a purchase only showed up once its monthly statement closed. Now the current period is read again — its settled movements only, never the ones still 'pending confirmation', which remain provisional until they settle. A movement still counts once: when this month's charge later lands in its statement, its stable identity makes the two one. Needs Habeas 0.10.7.3 or newer.",
+        "es": "Vuelven a recogerse los movimientos de tarjeta de este mes. Habían dejado de aparecer: el cambio que quitó los cargos pendientes provisionales se llevó por delante todo el periodo actual sin facturar, así que una compra no aparecía hasta que cerraba su extracto mensual. Ahora el periodo actual se lee de nuevo — solo sus movimientos ya confirmados, nunca los que están «pendientes de confirmar», que siguen siendo provisionales hasta que se liquidan. Un movimiento sigue contando una sola vez: cuando el cargo de este mes aparezca luego en su extracto, su identidad estable hace que los dos sean uno. Requiere Habeas 0.10.7.3 o posterior."
+      }
+    },
+    {
       "version": "2026-08-28",
       "changes": {
         "en": "Pending charges are no longer collected, and each movement now keeps the same identity between syncs. A pending charge is provisional — its amount, date and wording can all still change — and WiZink lists it a second time inside the statement that bills it, so the same purchase was being saved twice. From now on a movement is collected once, from its statement, with its final values. Its identity is also built from what the values mean rather than from how the page painted them, so a change of styling on the website can no longer turn one movement into two. One consequence, once: on the first sync after this update your card movements are treated as new, because their identity has changed.",
@@ -256,7 +270,7 @@
       }
     }
   ],
-  "minVersion": "0.10.2",
+  "minVersion": "0.10.7.3",
   "content": {
     "en": {
       "slug": "wizink-statements",

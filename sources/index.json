@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T04:46:39.483Z",
+  "generated": "2026-09-16T03:34:15.744Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -692,7 +692,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-08-27T16:51:51+02:00",
+      "updated": "2026-09-10T06:47:36+02:00",
       "behaviourHash": "60e850103d2c1b56"
     },
     {
@@ -1445,11 +1445,18 @@
       "country": "ES",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-08-28",
-      "minVersion": "0.10.2",
+      "version": "2026-09-15",
+      "minVersion": "0.10.7.3",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-09-15",
+          "changes": {
+            "en": "This month's card movements are collected again. They had stopped appearing: the change that removed provisional pending charges also dropped the whole current, not-yet-billed period, so a purchase only showed up once its monthly statement closed. Now the current period is read again — its settled movements only, never the ones still 'pending confirmation', which remain provisional until they settle. A movement still counts once: when this month's charge later lands in its statement, its stable identity makes the two one. Needs Habeas 0.10.7.3 or newer.",
+            "es": "Vuelven a recogerse los movimientos de tarjeta de este mes. Habían dejado de aparecer: el cambio que quitó los cargos pendientes provisionales se llevó por delante todo el periodo actual sin facturar, así que una compra no aparecía hasta que cerraba su extracto mensual. Ahora el periodo actual se lee de nuevo — solo sus movimientos ya confirmados, nunca los que están «pendientes de confirmar», que siguen siendo provisionales hasta que se liquidan. Un movimiento sigue contando una sola vez: cuando el cargo de este mes aparezca luego en su extracto, su identidad estable hace que los dos sean uno. Requiere Habeas 0.10.7.3 o posterior."
+          }
+        },
         {
           "version": "2026-08-28",
           "changes": {
@@ -1488,7 +1495,7 @@
       ],
       "url": "https://habeas-dev.github.io/sources/wizink-es.json",
       "updated": "2026-08-28T17:15:35+02:00",
-      "behaviourHash": "6e437127a24f9028"
+      "behaviourHash": "74408fa89da06b38"
     }
   ]
 }
