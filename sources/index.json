@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T16:04:27.688Z",
+  "generated": "2026-09-30T08:53:14.286Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -699,7 +699,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/ing-es.json",
-      "updated": "2026-09-10T06:47:36+02:00",
+      "updated": "2026-09-16T18:04:38+02:00",
       "behaviourHash": "c66c4fdbfda66a22"
     },
     {
@@ -1062,13 +1062,20 @@
       "crossDomain": [
         "api2.weltsparen.de"
       ],
-      "version": "2026-08-26.1",
-      "minVersion": "0.5.0.32",
+      "version": "2026-09-30",
+      "minVersion": "0.10.10.1",
       "gaps": [],
       "contributors": [
         "David Marín Carreño"
       ],
       "changelog": [
+        {
+          "version": "2026-09-30",
+          "changes": {
+            "en": "Fixed-term deposits now say what they are: a finance app receives each one as a term deposit, with the amount you put in, its nominal rate, its term and its maturity date, instead of a cash movement it could mistake for income. A matured deposit now reports the amount it held, not 0. Needs Habeas 0.10.10.1 or newer.",
+            "es": "Los depósitos a plazo dicen ya lo que son: una app de finanzas recibe cada uno como depósito a plazo, con el importe que pusiste, su tipo nominal, su plazo y su vencimiento, en vez de como un movimiento de efectivo que podía confundir con un ingreso. Un depósito vencido indica ya el importe que tuvo, no 0. Requiere Habeas 0.10.10.1 o posterior."
+          }
+        },
         {
           "version": "2026-08-26.1",
           "changes": {
@@ -1233,7 +1240,7 @@
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
       "updated": "2026-08-27T16:51:51+02:00",
-      "behaviourHash": "906bed24463093d2"
+      "behaviourHash": "374d4e86f75cdf92"
     },
     {
       "id": "revolut",
