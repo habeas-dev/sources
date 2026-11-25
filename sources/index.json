@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T08:53:14.286Z",
+  "generated": "2026-11-25T13:10:18.955Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -914,6 +914,36 @@
       "behaviourHash": "a3445d821787542f"
     },
     {
+      "id": "payoneer",
+      "name": "Payoneer",
+      "service": "payoneer",
+      "categories": [
+        "banking"
+      ],
+      "trust": "first-party",
+      "beta": true,
+      "domain": "payoneer.com",
+      "country": "global",
+      "formats": [],
+      "crossDomain": [],
+      "version": "2026-11-25",
+      "minVersion": "0.10.11.10",
+      "gaps": [],
+      "contributors": [],
+      "changelog": [
+        {
+          "version": "2026-11-25",
+          "changes": {
+            "en": "First version: the movements of every Payoneer currency balance, each balance as its own account.",
+            "es": "Primera versión: los movimientos de cada saldo en divisa de Payoneer, cada saldo como una cuenta."
+          }
+        }
+      ],
+      "url": "https://habeas-dev.github.io/sources/payoneer.json",
+      "updated": "2026-11-25T13:10:18.955Z",
+      "behaviourHash": "908a4ce2901b18a0"
+    },
+    {
       "id": "paypal",
       "name": "PayPal",
       "service": "paypal",
@@ -1239,7 +1269,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/raisin.json",
-      "updated": "2026-08-27T16:51:51+02:00",
+      "updated": "2026-09-30T10:53:20+02:00",
       "behaviourHash": "374d4e86f75cdf92"
     },
     {
@@ -1350,6 +1380,40 @@
       "url": "https://habeas-dev.github.io/sources/revolut.json",
       "updated": "2026-08-28T17:15:35+02:00",
       "behaviourHash": "7232204f9f330738"
+    },
+    {
+      "id": "stripe-fees",
+      "name": "Stripe — facturas de comisiones",
+      "service": "stripe",
+      "categories": [
+        "banking"
+      ],
+      "trust": "first-party",
+      "beta": true,
+      "domain": "stripe.com",
+      "country": null,
+      "formats": [
+        "pdf"
+      ],
+      "crossDomain": [
+        "stripe-tax-docs.s3.amazonaws.com"
+      ],
+      "version": "2026-11-25",
+      "minVersion": "0.10.11.8",
+      "gaps": [],
+      "contributors": [],
+      "changelog": [
+        {
+          "version": "2026-11-25",
+          "changes": {
+            "en": "First version: Stripe's monthly fee invoices (PDF), for the account open in the dashboard.",
+            "es": "Primera versión: las facturas mensuales de comisiones de Stripe (PDF), de la cuenta abierta en el panel."
+          }
+        }
+      ],
+      "url": "https://habeas-dev.github.io/sources/stripe-fees.json",
+      "updated": "2026-11-25T13:10:18.955Z",
+      "behaviourHash": "73a0d91ecd6b3741"
     },
     {
       "id": "traderepublic",
