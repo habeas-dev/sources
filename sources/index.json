@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T13:10:18.955Z",
+  "generated": "2026-11-25T17:59:36.313Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -940,7 +940,7 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/payoneer.json",
-      "updated": "2026-11-25T13:10:18.955Z",
+      "updated": "2026-11-25T14:10:47+01:00",
       "behaviourHash": "908a4ce2901b18a0"
     },
     {
@@ -1398,11 +1398,18 @@
       "crossDomain": [
         "stripe-tax-docs.s3.amazonaws.com"
       ],
-      "version": "2026-11-25",
-      "minVersion": "0.10.11.8",
+      "version": "2026-11-25.1",
+      "minVersion": "0.10.12.1",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-11-25.1",
+          "changes": {
+            "en": "Finds the fee invoices of every account in your Stripe profile, not only the one open in the dashboard; pick which ones in the account list.",
+            "es": "Encuentra las facturas de comisiones de todas las cuentas de tu perfil de Stripe, no solo la que tienes abierta en el panel; elige cuáles en la lista de cuentas."
+          }
+        },
         {
           "version": "2026-11-25",
           "changes": {
@@ -1412,8 +1419,8 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/stripe-fees.json",
-      "updated": "2026-11-25T13:10:18.955Z",
-      "behaviourHash": "73a0d91ecd6b3741"
+      "updated": "2026-11-25T14:10:47+01:00",
+      "behaviourHash": "67248d47a8dc37f7"
     },
     {
       "id": "traderepublic",
