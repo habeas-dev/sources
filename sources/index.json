@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T17:59:36.313Z",
+  "generated": "2026-11-26T04:35:05.466Z",
   "sources": [
     {
       "id": "aliexpress",
@@ -921,16 +921,23 @@
         "banking"
       ],
       "trust": "first-party",
-      "beta": true,
+      "beta": false,
       "domain": "payoneer.com",
       "country": "global",
       "formats": [],
       "crossDomain": [],
-      "version": "2026-11-25",
+      "version": "2026-11-26",
       "minVersion": "0.10.11.10",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-11-26",
+          "changes": {
+            "en": "Verified against a real account: no longer experimental.",
+            "es": "Verificada con una cuenta real: deja de ser experimental."
+          }
+        },
         {
           "version": "2026-11-25",
           "changes": {
@@ -941,7 +948,7 @@
       ],
       "url": "https://habeas-dev.github.io/sources/payoneer.json",
       "updated": "2026-11-25T14:10:47+01:00",
-      "behaviourHash": "908a4ce2901b18a0"
+      "behaviourHash": "0c6b61ff72bf137c"
     },
     {
       "id": "paypal",
@@ -1389,7 +1396,7 @@
         "banking"
       ],
       "trust": "first-party",
-      "beta": true,
+      "beta": false,
       "domain": "stripe.com",
       "country": null,
       "formats": [
@@ -1398,11 +1405,18 @@
       "crossDomain": [
         "stripe-tax-docs.s3.amazonaws.com"
       ],
-      "version": "2026-11-25.1",
+      "version": "2026-11-26",
       "minVersion": "0.10.12.1",
       "gaps": [],
       "contributors": [],
       "changelog": [
+        {
+          "version": "2026-11-26",
+          "changes": {
+            "en": "Verified against a real account: no longer experimental.",
+            "es": "Verificada con una cuenta real: deja de ser experimental."
+          }
+        },
         {
           "version": "2026-11-25.1",
           "changes": {
@@ -1419,8 +1433,8 @@
         }
       ],
       "url": "https://habeas-dev.github.io/sources/stripe-fees.json",
-      "updated": "2026-11-25T14:10:47+01:00",
-      "behaviourHash": "67248d47a8dc37f7"
+      "updated": "2026-11-25T18:59:44+01:00",
+      "behaviourHash": "937152e5f2034186"
     },
     {
       "id": "traderepublic",
